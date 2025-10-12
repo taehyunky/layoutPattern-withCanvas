@@ -2,6 +2,8 @@
 .env
 /node_modules/
 
+.cursor/
+
 # React Router
 /.react-router/
 /build/
