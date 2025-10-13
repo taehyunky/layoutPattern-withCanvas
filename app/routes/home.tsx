@@ -1,6 +1,12 @@
 import { useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
-import { LayoutDashboardIcon, PanelsTopLeftIcon, SparklesIcon } from 'lucide-react';
+import {
+    LayersIcon,
+    LayoutDashboardIcon,
+    MegaphoneIcon,
+    PanelsTopLeftIcon,
+    SparklesIcon,
+} from 'lucide-react';
 
 import type { Route } from './+types/home';
 import { CanvasWorkspace } from '~/components/canvas/CanvasWorkspace';
@@ -8,6 +14,28 @@ import {
     PromptPreviewDialog,
     type PromptPreviewData,
 } from '~/components/canvas/PromptPreviewDialog';
+import {
+    CtaCenteredSingle,
+    CtaFeatureHighlights,
+    CtaGridOptions,
+    CtaInlineForm,
+    CtaMediaBackground,
+    CtaMultiStep,
+    CtaSplitDual,
+    CtaStickyBar,
+    CtaTestimonial,
+    CtaUrgencyBanner,
+} from '~/components/sections/cta';
+import {
+    FeatureAccordion,
+    FeatureBento,
+    FeatureCarousel,
+    FeatureFilterMatrix,
+    FeatureIconGrid,
+    FeatureTabs,
+    FeatureToggleComparison,
+    FeatureZigzag,
+} from '~/components/sections/feature';
 import {
     HeroAsymmetricGrid,
     HeroBentoGrid,
@@ -119,8 +147,124 @@ export default function Home() {
             };
         };
 
+        const ctaPromptSectionId = 'cta-section';
+        const featurePromptSectionId = 'feature-section-pattern';
         const heroPromptSectionId = 'hero-section-pattern';
         const navbarPromptSectionId = 'navbar-section';
+
+        const ctaPatterns = [
+            {
+                id: 'cta-centered-single',
+                title: 'Centered Primary CTA',
+                component: CtaCenteredSingle,
+                promptId: 'centered-cta-block-with-single-prominent-button',
+            },
+            {
+                id: 'cta-split-dual',
+                title: 'Split Dual Actions',
+                component: CtaSplitDual,
+                promptId: 'split-cta-with-dual-action-buttons',
+            },
+            {
+                id: 'cta-urgency-banner',
+                title: 'Urgency Banner',
+                component: CtaUrgencyBanner,
+                promptId: 'cta-banner-with-urgency-elements',
+            },
+            {
+                id: 'cta-feature-highlights',
+                title: 'Feature Highlights Card',
+                component: CtaFeatureHighlights,
+                promptId: 'cta-card-with-feature-highlights',
+            },
+            {
+                id: 'cta-media-background',
+                title: 'Media Background CTA',
+                component: CtaMediaBackground,
+                promptId: 'full-width-cta-with-background-image-video',
+            },
+            {
+                id: 'cta-inline-form',
+                title: 'Inline Form Subscribe',
+                component: CtaInlineForm,
+                promptId: 'inline-cta-with-form-input',
+            },
+            {
+                id: 'cta-multi-step',
+                title: 'Multi-Step Progress',
+                component: CtaMultiStep,
+                promptId: 'multi-step-cta-with-progress-indicator',
+            },
+            {
+                id: 'cta-testimonial',
+                title: 'Testimonial CTA',
+                component: CtaTestimonial,
+                promptId: 'social-proof-cta-with-testimonial',
+            },
+            {
+                id: 'cta-sticky-bar',
+                title: 'Sticky Bottom Bar',
+                component: CtaStickyBar,
+                promptId: 'sticky-bottom-cta-bar',
+            },
+            {
+                id: 'cta-grid-options',
+                title: 'Grid of Options',
+                component: CtaGridOptions,
+                promptId: 'cta-grid-with-multiple-options',
+            },
+        ].map(pattern => attachPromptDetails(pattern, ctaPromptSectionId));
+
+        const featurePatterns = [
+            {
+                id: 'feature-icon-grid',
+                title: 'Icon Feature Grid',
+                component: FeatureIconGrid,
+                promptId: 'three-column-icon-feature-grid-with-hover-states',
+            },
+            {
+                id: 'feature-zigzag',
+                title: 'Zigzag Feature Showcase',
+                component: FeatureZigzag,
+                promptId: 'alternating-image-text-feature-showcase-zigzag-layout',
+            },
+            {
+                id: 'feature-tabs',
+                title: 'Tabbed Feature Switcher',
+                component: FeatureTabs,
+                promptId: 'tabbed-feature-interface-with-content-switching',
+            },
+            {
+                id: 'feature-bento',
+                title: 'Bento Feature Mosaic',
+                component: FeatureBento,
+                promptId: 'bento-style-feature-mosaic-with-variable-card-sizes',
+            },
+            {
+                id: 'feature-accordion',
+                title: 'Feature Accordion',
+                component: FeatureAccordion,
+                promptId: 'accordion-feature-list-with-expandable-details',
+            },
+            {
+                id: 'feature-carousel',
+                title: 'Horizontal Feature Carousel',
+                component: FeatureCarousel,
+                promptId: 'horizontal-scrolling-feature-cards-carousel-slider',
+            },
+            {
+                id: 'feature-toggle-comparison',
+                title: 'Responsive Toggle Comparison',
+                component: FeatureToggleComparison,
+                promptId: 'split-screen-feature-comparison-with-toggle-switch',
+            },
+            {
+                id: 'feature-filter-matrix',
+                title: 'Filterable Feature Matrix',
+                component: FeatureFilterMatrix,
+                promptId: 'interactive-feature-matrix-with-filtering',
+            },
+        ].map(pattern => attachPromptDetails(pattern, featurePromptSectionId));
 
         const heroPatterns = [
             { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
@@ -222,13 +366,36 @@ export default function Home() {
 
         return [
             {
+                id: 'cta',
+                label: 'CTA',
+                icon: MegaphoneIcon,
+                description: 'Conversion-focused call to actions',
+                patternLabel: 'CTA pattern',
+                promptSectionId: ctaPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(ctaPromptSectionId)?.title ?? undefined,
+                patterns: ctaPatterns,
+            },
+            {
+                id: 'feature',
+                label: 'Features',
+                icon: LayersIcon,
+                description: 'Showcase product and capability highlights',
+                patternLabel: 'Feature pattern',
+                promptSectionId: featurePromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(featurePromptSectionId)?.title ?? undefined,
+                patterns: featurePatterns,
+            },
+            {
                 id: 'hero',
                 label: 'Hero',
                 icon: SparklesIcon,
                 description: 'Primary above-the-fold layouts',
                 patternLabel: 'Hero variant',
                 promptSectionId: heroPromptSectionId,
-                promptSectionTitle: resolvePromptSectionMeta(heroPromptSectionId)?.title ?? undefined,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(heroPromptSectionId)?.title ?? undefined,
                 patterns: heroPatterns,
             },
             {
@@ -238,7 +405,8 @@ export default function Home() {
                 description: 'Top-of-experience navigation systems',
                 patternLabel: 'Navigation pattern',
                 promptSectionId: navbarPromptSectionId,
-                promptSectionTitle: resolvePromptSectionMeta(navbarPromptSectionId)?.title ?? undefined,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(navbarPromptSectionId)?.title ?? undefined,
                 patterns: navbarPatterns,
             },
             {
@@ -369,12 +537,13 @@ export default function Home() {
                                                         patternTitle: pattern.title,
                                                         documentTitle: pattern.promptDetails.title,
                                                         prompt: pattern.promptDetails.prompt,
-                                                        sourcePath: pattern.promptDetails.sourcePath,
+                                                        sourcePath:
+                                                            pattern.promptDetails.sourcePath,
                                                         order: pattern.promptDetails.order,
                                                     });
                                                 }}
                                             >
-                                                프롬프트 미리보기
+                                                프롬프트 보기
                                             </Button>
                                             <Button size="sm" variant="ghost">
                                                 Inspect

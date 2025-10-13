@@ -6,61 +6,61 @@
                 "order": 1,
                 "title": "Team Grid with Headshots and Bios",
                 "prompt": "- **구조**: Grid layout of team member cards with photos\n- **카드**: Headshot photo + name + role/title + short bio\n- **사진**: Square or circular headshots (200-300px), consistent styling\n- **레이아웃**: 3-4 column grid on desktop\n- **호버**: Hover reveals social links or additional info\n- **간격**: 24-40px gap between cards\n- **Mobile**: 2-column grid or single-column, photo 120-160px, name 16-18px bold, role 13-14px, bio 14-15px or truncated with \"Read more\", card padding 16-20px, gap 16-20px, hover replaced with tap to expand, social icons 20-24px if shown, maintain aspect ratio for photos, optional: carousel for large teams (horizontal scroll)",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "founder-story-with-timeline": {
                 "order": 2,
                 "title": "Founder Story with Timeline",
                 "prompt": "- **구조**: Narrative story format with company timeline\n- **컨텐츠**: Founding story text + key milestone timeline\n- **타임라인**: Horizontal or vertical with year markers and events\n- **레이아웃**: Story text above/beside timeline visual\n- **이미지**: Historic photos, product evolution images\n- **이정표**: Year + headline + brief description per milestone\n- **Mobile**: Vertical timeline (not horizontal), story text full-width above timeline, timeline left-aligned with 40-50px left margin for year markers, year 16-18px bold, milestone headline 15-17px, description 13-14px, images full-width between timeline items, vertical spacing 32-40px per milestone, story text 15-16px with generous line-height (1.6-1.7), padding 20-24px",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "mission-vision-values-cards": {
                 "order": 3,
                 "title": "Mission/Vision/Values Cards",
                 "prompt": "- **구조**: 3-column layout for company pillars\n- **카드**: Large icon + heading (Mission/Vision/Values) + description\n- **아이콘**: Custom illustrations or icons (64-80px)\n- **스타일**: Elevated cards or flat with borders\n- **컨텐츠**: 2-4 paragraph description per pillar\n- **배경**: Optional background images or gradients\n- **Mobile**: Single-column stack, icon 56-64px centered, heading 22-26px, description 15-16px with line-height 1.6, card padding 28-36px, gap between cards 20-24px, full-width cards with margin 16-20px, background images scaled/positioned for mobile, maintain visual hierarchy, optional dividers between cards",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "company-stats-metrics-highlight": {
                 "order": 4,
                 "title": "Company Stats/Metrics Highlight",
                 "prompt": "- **구조**: Large numbers with descriptive labels in grid\n- **메트릭**: 4-6 key stats (employees, customers, years, locations)\n- **숫자**: Very large display numbers (48-80px) with animation\n- **레이아웃**: 2x2 or 3x2 grid, centered alignment\n- **애니메이션**: Count-up animation on scroll into view\n- **라벨**: Descriptive text below numbers (14-16px)\n- **Mobile**: 2-column grid or single-column, numbers 36-56px, labels 13-15px, grid gap 24-32px, padding per cell 20-24px, count-up animation faster (1-1.5s), clear visual separation (borders or backgrounds), maintain grid structure, icons optional with numbers (24-32px)",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "office-culture-photo-gallery": {
                 "order": 5,
                 "title": "Office/Culture Photo Gallery",
                 "prompt": "- **구조**: Masonry or grid gallery of office and team photos\n- **이미지**: Candid photos showing workplace culture\n- **레이아웃**: 3-4 column masonry or equal-height rows\n- **인터랙션**: Click to view fullscreen lightbox\n- **캡션**: Optional captions on hover or below images\n- **간격**: 12-20px gap between photos\n- **Mobile**: 2-column grid (not masonry for simpler layout), images maintain aspect ratios, gap 8-12px, tap image for fullscreen view with swipe navigation, caption overlay on image (bottom, translucent background), loading progressive (lazy load), lightbox with close button (X, 32px), swipe between images in lightbox, initial load shows 6-9 photos, \"Load more\" button if many photos",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "leadership-showcase-with-expanded-profiles": {
                 "order": 6,
                 "title": "Leadership Showcase with Expanded Profiles",
                 "prompt": "- **구조**: Featured leadership profiles with detailed bios\n- **레이아웃**: Large headshot + extensive bio + achievements\n- **프로필**: Full paragraph bio (100-200 words) per leader\n- **소셜**: LinkedIn, Twitter, email links per person\n- **이미지**: Professional large headshots (400-500px)\n- **형식**: One per row or 2-column layout\n- **Mobile**: Single-column stack, headshot 200-240px (full-width or centered), name 20-24px bold, title 16-17px, bio 14-15px with line-height 1.6-1.7, social links horizontal row (icon 28-32px), spacing between profiles 40-48px, professional styling maintained, optional: accordion collapse for long bios, \"Read full bio\" expand, padding 24-28px per profile section",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "interactive-company-map": {
                 "order": 7,
                 "title": "Interactive Company Map",
                 "prompt": "- **구조**: World map showing office locations with markers\n- **지도**: Embedded interactive map (Google Maps, Mapbox, custom SVG)\n- **마커**: Pin markers for each office location\n- **인터랙션**: Click marker to show office details (address, team size)\n- **정보 카드**: Popup or sidebar showing location info\n- **스타일**: Brand-styled map colors, custom pin icons\n- **Mobile**: Map full-width, height 300-400px, touch/pinch zoom enabled, location markers 32-40px (large touch target), info card as bottom sheet (not popup), card shows on marker tap, address 14-15px, team info 13-14px, \"Get directions\" link with large touch target, list view toggle (switch to list of locations), simplified map interactions, native maps app integration option",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "career-join-us-integration": {
                 "order": 8,
                 "title": "Career/Join Us Integration",
                 "prompt": "- **구조**: About section with CTA to careers/open positions\n- **컨텐츠**: Team/culture info above, \"Join our team\" section below\n- **직무**: List of 3-5 featured open positions\n- **CTA**: \"View all openings\" button linking to careers page\n- **레이아웃**: Smooth transition from about to careers\n- **디자인**: Visually connected but distinct sections\n- **Mobile**: About content stacked first, careers section with clear separation (background color change), position cards full-width, position title 16-18px, department/location 13-14px, card padding 20-24px, gap between cards 12-16px, \"View all openings\" button full-width (min 48px height), padding between sections 40-48px, optional: horizontal scroll for positions with snap points",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "awards-and-recognition-display": {
                 "order": 9,
                 "title": "Awards and Recognition Display",
                 "prompt": "- **구조**: Grid or carousel of awards, certifications, press mentions\n- **아이템**: Award logo/badge + year + title + issuing organization\n- **레이아웃**: 3-4 column grid or horizontal slider\n- **스타일**: Consistent card or badge design for all awards\n- **신뢰 요소**: Logos from reputable organizations (Forbes, Inc, etc.)\n- **간격**: 20-32px gap between award items\n- **Mobile**: 2-column grid or horizontal scroll (snap-scroll), badge/logo max-width 100-120px, year 13-14px, title 14-16px, organization 12-13px, card padding 16-20px, gap 12-16px, horizontal scroll option with 2-3 visible + peek, maintain logo aspect ratios, simple card design (not complex), awards grouped by year optional",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             },
             "video-introduction-behind-the-scenes": {
                 "order": 10,
                 "title": "Video Introduction/Behind the Scenes",
                 "prompt": "- **구조**: Hero video with company introduction or culture showcase\n- **비디오**: 1-3 minute company video (CEO message, team interviews)\n- **플레이어**: Large video player (16:9 aspect) with custom controls\n- **컨텐츠**: Video above, supporting text/stats below\n- **CTA**: \"Learn more about us\" button below video\n- **자막**: Captions/subtitles available for accessibility\n- **Mobile**: Video full-width (16:9 maintained), height auto-responsive, native video controls, poster image high-quality, play button 56-64px (large, centered), video loads on interaction (not autoplay), captions enabled by default option, supporting text 14-15px below video, CTA button full-width or centered (min 48px), padding 20-24px around content, video optimized for mobile bandwidth, fallback to image if video fails",
-                "sourcePath": "docs/about-section.md"
+                "sourcePath": "docs/sections/credibility/about-section.md"
             }
         }
     },
@@ -71,126 +71,126 @@
                 "order": 1,
                 "title": "Classic Feature Comparison Matrix",
                 "prompt": "- **구조**: Table with features as rows, products/plans as columns\n- **헤더**: Product names in top row (sticky on scroll)\n- **행**: Feature name in left column, checkmarks/X in product columns\n- **스타일**: Alternating row colors (zebra striping)\n- **강조**: Highlighted column for recommended option\n- **CTA**: \"Choose plan\" button in each column header\n- **Mobile**: Horizontal scroll (lock left column), product columns min-width 140-160px, sticky header and left column, checkmark 16-18px, X icon or empty cell, text 13-14px, header 14-15px bold, zebra striping maintained, CTA button full-width within column, scroll indicator (shadow/fade), padding 12-16px per cell, simplified view toggle (show all vs differences only)",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "us-vs-competitor-comparison": {
                 "order": 2,
                 "title": "Us vs Competitor Comparison",
                 "prompt": "- **구조**: Two-column direct comparison (Our Product vs Competitor)\n- **레이아웃**: Side-by-side with feature categories\n- **강조**: Our product column highlighted (border, background)\n- **컨텐츠**: Feature-by-feature breakdown with explanations\n- **시각적**: Checkmarks, X, and descriptive text per feature\n- **결론**: Summary or CTA at bottom of our column\n- **Mobile**: Stacked layout (our product first/top), or maintained side-by-side with horizontal scroll, our product visually prominent (background color), feature rows full-width if stacked, text 14-15px, checkmark 18-20px, category headers 16-17px bold, padding 16-20px per section, \"Switch to see differences\" toggle, CTA button full-width at bottom, clear winner indication",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "tabbed-competitor-comparison": {
                 "order": 3,
                 "title": "Tabbed Competitor Comparison",
                 "prompt": "- **구조**: Tabs for each competitor, comparison table updates per tab\n- **탭**: Horizontal tabs (Us vs [Competitor A], Us vs [Competitor B])\n- **테이블**: Feature comparison specific to selected competitor\n- **전환**: Smooth transition when switching tabs\n- **강조**: Always shows \"Us\" column vs selected competitor\n- **레이아웃**: Tabs above, comparison table below\n- **Mobile**: Tabs horizontal scroll (snap-scroll), tab min-width 140-160px, tab height 44-48px, table below as horizontal scroll or stacked, competitor logo in tab, active tab clear indicator, swipe between tabs optional, comparison content updates smoothly, 2-column table (Us | Competitor), text 13-15px, padding 16-20px, clear visual hierarchy",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "interactive-slider-comparison": {
                 "order": 4,
                 "title": "Interactive Slider Comparison",
                 "prompt": "- **구조**: Before/after style comparison with draggable slider\n- **컨텐츠**: Side-by-side UI screenshots or feature lists\n- **슬라이더**: Vertical divider, drag to reveal more of either side\n- **라벨**: \"Product A\" and \"Product B\" labels on respective sides\n- **사용**: Compare UI, features, pricing, or results\n- **초기 위치**: Slider at 50% by default\n- **Mobile**: Slider full-width, handle 48-56px (large touch target), drag optimized for touch, labels 15-16px at top corners, smooth drag performance, initial position 50%, clear visual affordance (handle has arrows), screenshots scale to mobile, alternative: stacked comparison with toggle switch instead of slider, padding 16-20px",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "pros-cons-list-comparison": {
                 "order": 5,
                 "title": "Pros/Cons List Comparison",
                 "prompt": "- **구조**: Two columns per product (Pros | Cons)\n- **레이아웃**: Grid showing 2-3 products, each with pros/cons lists\n- **아이콘**: Green checkmark for pros, red X for cons\n- **리스트**: 3-5 items per list\n- **카드**: Each product as a card with pros/cons\n- **CTA**: \"Choose this\" button below each product card\n- **Mobile**: Single-column stack (one product card at a time), card full-width, pros list above cons list, icon 18-20px, list text 14-15px, card padding 24-28px, gap between cards 20-24px, \"Choose\" button full-width 48px height, clear product name 18-20px bold at top, divider between pros/cons, generous spacing 16-20px between list items",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "category-based-comparison": {
                 "order": 6,
                 "title": "Category-Based Comparison",
                 "prompt": "- **구조**: Comparison grouped by feature categories\n- **카테고리**: Pricing, Features, Support, Integration (separate sections)\n- **레이아웃**: Accordion or tabs for categories, comparison within each\n- **컨텐츠**: Detailed comparison per category\n- **스코어**: Optional rating (1-5 stars) per category per product\n- **종합**: Overall winner indication at bottom\n- **Mobile**: Accordion layout (category headers collapsible), header min-height 52px, category name 16-18px bold, comparison table within accordion full-width or horizontal scroll, stars 16-18px, text 13-14px, padding 16-20px per category, smooth expand/collapse 300ms, one category open at a time (recommended), overall score prominent 20-24px, winner badge clear",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "pricing-calculator-comparison": {
                 "order": 7,
                 "title": "Pricing Calculator Comparison",
                 "prompt": "- **구조**: Interactive calculator showing cost comparison\n- **입력**: User inputs usage (users, storage, etc.)\n- **출력**: Real-time price calculation for multiple products\n- **비교**: Side-by-side price cards updating as user adjusts inputs\n- **시각화**: Graph or chart showing cost over time\n- **하이라이트**: Cheapest option highlighted automatically\n- **Mobile**: Inputs stacked vertically, slider full-width, dropdown 48px height, price cards stacked (1-col), price 32-40px bold per card, savings indicator clear, graph full-width (simplified for mobile), inputs section padding 20-24px, results section padding 20-24px, \"Calculate\" button full-width if needed, real-time updates maintained, haptic feedback on slider",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "expandable-detailed-comparison": {
                 "order": 8,
                 "title": "Expandable Detailed Comparison",
                 "prompt": "- **구조**: Compact comparison with \"See more\" expansions\n- **초기**: Shows top 5-7 key features in comparison\n- **확장**: Click \"See all features\" to reveal full comparison\n- **레이아웃**: Table expands smoothly to show all rows\n- **필터**: Optional \"Show only differences\" toggle\n- **검색**: Search bar to find specific features\n- **Mobile**: Initial view 3-5 features, \"See all\" button full-width 44-48px, expanded view horizontal scroll for columns, search bar full-width 48px height, toggle switches accessible, smooth expansion 300ms, collapse button visible when expanded, text 13-14px, feature names 14-15px, padding maintained, search focuses and keyboard appears, results filter instantly",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "visual-icon-based-comparison": {
                 "order": 9,
                 "title": "Visual Icon-Based Comparison",
                 "prompt": "- **구조**: Large icons/images representing products with feature icons\n- **레이아웃**: Product icons at top, feature icons below in grid\n- **시각적**: Checkmarks, ratings, or color-coded indicators\n- **아이콘**: Consistent icon set for all features\n- **설명**: Hover/tap icon for feature description\n- **최소 텍스트**: Heavy visual, minimal text approach\n- **Mobile**: Product icons stacked or 2-col, icon 40-48px, feature grid 2-3 columns, tap icon for description (modal or expansion), description 14-15px, checkmark/rating 20-24px, clear legend at top explaining icons, padding 16-20px, icons accessible (alt text), color + shape coding (not color alone), maintain visual clarity",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             },
             "score-based-ranking-comparison": {
                 "order": 10,
                 "title": "Score-Based Ranking Comparison",
                 "prompt": "- **구조**: Products ranked by overall score with category breakdowns\n- **레이아웃**: Vertical list ordered by total score (highest first)\n- **스코어**: Overall score (e.g., 8.5/10) prominent + category scores\n- **카테고리**: Performance, Features, Value, Support (each scored)\n- **시각화**: Progress bars or star ratings per category\n- **순위**: #1, #2, #3 badges with winner highlighted\n- **CTA**: \"Choose\" or \"Learn more\" button per product\n- **Mobile**: Single-column list (ranked order maintained), overall score 28-36px bold, product name 18-20px, rank badge 32-40px (top-right corner), category scores stacked vertically, progress bars full-width within card, category label 14-15px, score value 16-18px, star ratings 16-18px, card padding 24-28px, gap between products 20-24px, CTA button full-width 48px height, expand/collapse category details optional, clear visual winner treatment (gold border, background)",
-                "sourcePath": "docs/comparison-table.md"
+                "sourcePath": "docs/sections/conversion/comparison-table.md"
             }
         }
     },
     "contact-section": {
-        "title": "About/Team Section Candidates (Professional Terminology)",
+        "title": "Contact Section Candidates (Professional Terminology)",
         "patterns": {
-            "team-grid-with-headshots-and-bios": {
+            "standard-contact-form": {
                 "order": 1,
-                "title": "Team Grid with Headshots and Bios",
-                "prompt": "- **구조**: Grid layout of team member cards with photos\n- **카드**: Headshot photo + name + role/title + short bio\n- **사진**: Square or circular headshots (200-300px), consistent styling\n- **레이아웃**: 3-4 column grid on desktop\n- **호버**: Hover reveals social links or additional info\n- **간격**: 24-40px gap between cards\n- **Mobile**: 2-column grid or single-column, photo 120-160px, name 16-18px bold, role 13-14px, bio 14-15px or truncated with \"Read more\", card padding 16-20px, gap 16-20px, hover replaced with tap to expand, social icons 20-24px if shown, maintain aspect ratio for photos, optional: carousel for large teams (horizontal scroll)",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Standard Contact Form",
+                "prompt": "- **구조**: Multi-field form with name, email, message, submit button\n- **필드**: Name (text), Email (email input), Subject (optional), Message (textarea)\n- **레이아웃**: Single-column form, max-width 600px\n- **Validation**: Real-time validation, error states visible\n- **버튼**: Primary submit button (full-width or centered)\n- **피드백**: Success message or redirect after submission\n- **Mobile**: All fields full-width, input min-height 48px, textarea min-height 120px, labels 14-15px, input text 16px (prevent iOS zoom), button full-width 48-52px height, error messages 13-14px (red, below field), padding 20-24px, clear focus states, keyboard-appropriate input types, success message prominent 16-18px, form padding 24-28px",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "founder-story-with-timeline": {
+            "split-layout-form-contact-info": {
                 "order": 2,
-                "title": "Founder Story with Timeline",
-                "prompt": "- **구조**: Narrative story format with company timeline\n- **컨텐츠**: Founding story text + key milestone timeline\n- **타임라인**: Horizontal or vertical with year markers and events\n- **레이아웃**: Story text above/beside timeline visual\n- **이미지**: Historic photos, product evolution images\n- **이정표**: Year + headline + brief description per milestone\n- **Mobile**: Vertical timeline (not horizontal), story text full-width above timeline, timeline left-aligned with 40-50px left margin for year markers, year 16-18px bold, milestone headline 15-17px, description 13-14px, images full-width between timeline items, vertical spacing 32-40px per milestone, story text 15-16px with generous line-height (1.6-1.7), padding 20-24px",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Split Layout (Form + Contact Info)",
+                "prompt": "- **구조**: Two-column layout - form left, contact info right\n- **좌측**: Contact form (same as standard)\n- **우측**: Office address, phone, email, social links, optional map\n- **레이아웃**: 60:40 or 50:50 split\n- **정보**: Icons + text for each contact method\n- **지도**: Optional embedded map showing location\n- **Mobile**: Single-column stack (form first, then contact info), form full-width with padding 20-24px, contact info full-width below form, info items padding 16-20px, icon 24-28px, text 14-15px, clickable phone/email (tel:, mailto: links), map full-width 250-300px height if present, social icons 32-36px with spacing, clear section separation 32-40px gap",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "mission-vision-values-cards": {
+            "minimal-email-phone-only": {
                 "order": 3,
-                "title": "Mission/Vision/Values Cards",
-                "prompt": "- **구조**: 3-column layout for company pillars\n- **카드**: Large icon + heading (Mission/Vision/Values) + description\n- **아이콘**: Custom illustrations or icons (64-80px)\n- **스타일**: Elevated cards or flat with borders\n- **컨텐츠**: 2-4 paragraph description per pillar\n- **배경**: Optional background images or gradients\n- **Mobile**: Single-column stack, icon 56-64px centered, heading 22-26px, description 15-16px with line-height 1.6, card padding 28-36px, gap between cards 20-24px, full-width cards with margin 16-20px, background images scaled/positioned for mobile, maintain visual hierarchy, optional dividers between cards",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Minimal Email/Phone Only",
+                "prompt": "- **구조**: Simple section with email address and phone number displayed\n- **컨텐츠**: Large, prominent email and phone with copy buttons\n- **레이아웃**: Center-aligned, minimal text\n- **인터랙션**: Click to copy email/phone to clipboard\n- **피드백**: \"Copied!\" tooltip on successful copy\n- **CTA**: Optional \"Send email\" button opening email client\n- **Mobile**: Email 18-22px, phone 18-22px, both as tappable links (mailto:, tel:), copy button 40-44px icon button, \"Copied\" feedback visible 2-3s, padding 32-40px, center-aligned, generous spacing 20-24px between email/phone, optional subtitle \"Get in touch\" 14-15px above, high contrast for visibility",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "company-stats-metrics-highlight": {
+            "multi-department-contact-options": {
                 "order": 4,
-                "title": "Company Stats/Metrics Highlight",
-                "prompt": "- **구조**: Large numbers with descriptive labels in grid\n- **메트릭**: 4-6 key stats (employees, customers, years, locations)\n- **숫자**: Very large display numbers (48-80px) with animation\n- **레이아웃**: 2x2 or 3x2 grid, centered alignment\n- **애니메이션**: Count-up animation on scroll into view\n- **라벨**: Descriptive text below numbers (14-16px)\n- **Mobile**: 2-column grid or single-column, numbers 36-56px, labels 13-15px, grid gap 24-32px, padding per cell 20-24px, count-up animation faster (1-1.5s), clear visual separation (borders or backgrounds), maintain grid structure, icons optional with numbers (24-32px)",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Multi-Department Contact Options",
+                "prompt": "- **구조**: Cards or tabs for different departments (Sales, Support, Press)\n- **레이아웃**: 3-4 cards or tab interface\n- **카드**: Department name + specific email/phone + description\n- **형식**: \"For sales inquiries: sales@company.com\"\n- **CTA**: Each card has \"Contact [Department]\" button\n- **아이콘**: Relevant icon per department\n- **Mobile**: Single-column stack of cards, card full-width, icon 32-40px, department name 18-20px bold, description 14-15px, email/phone 15-16px, \"Contact\" button full-width within card 44-48px height, card padding 24-28px, gap between cards 16-20px, tap email/phone for direct action, clear visual separation per department",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "office-culture-photo-gallery": {
+            "live-chat-widget-integration": {
                 "order": 5,
-                "title": "Office/Culture Photo Gallery",
-                "prompt": "- **구조**: Masonry or grid gallery of office and team photos\n- **이미지**: Candid photos showing workplace culture\n- **레이아웃**: 3-4 column masonry or equal-height rows\n- **인터랙션**: Click to view fullscreen lightbox\n- **캡션**: Optional captions on hover or below images\n- **간격**: 12-20px gap between photos\n- **Mobile**: 2-column grid (not masonry for simpler layout), images maintain aspect ratios, gap 8-12px, tap image for fullscreen view with swipe navigation, caption overlay on image (bottom, translucent background), loading progressive (lazy load), lightbox with close button (X, 32px), swipe between images in lightbox, initial load shows 6-9 photos, \"Load more\" button if many photos",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Live Chat Widget Integration",
+                "prompt": "- **구조**: Contact section with embedded live chat interface\n- **위젯**: Live chat bubble or embedded chat window\n- **상태**: \"Available now\" or \"Offline\" indicator with hours\n- **레이아웃**: Chat widget prominent, alternative contact methods below\n- **응답**: Immediate chat support during business hours\n- **대체**: Form or email shown when offline\n- **Mobile**: Chat widget bottom-right corner (56-64px diameter), tap to expand fullscreen chat, chat interface optimized for mobile (input 48px, message bubbles readable), \"Chat with us\" text visible, availability status 13-14px, offline form full-width, alternative contacts stacked below chat, clear close button in chat (32px X), keyboard input smooth, message history scrollable",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "leadership-showcase-with-expanded-profiles": {
+            "faq-contact-hybrid": {
                 "order": 6,
-                "title": "Leadership Showcase with Expanded Profiles",
-                "prompt": "- **구조**: Featured leadership profiles with detailed bios\n- **레이아웃**: Large headshot + extensive bio + achievements\n- **프로필**: Full paragraph bio (100-200 words) per leader\n- **소셜**: LinkedIn, Twitter, email links per person\n- **이미지**: Professional large headshots (400-500px)\n- **형식**: One per row or 2-column layout\n- **Mobile**: Single-column stack, headshot 200-240px (full-width or centered), name 20-24px bold, title 16-17px, bio 14-15px with line-height 1.6-1.7, social links horizontal row (icon 28-32px), spacing between profiles 40-48px, professional styling maintained, optional: accordion collapse for long bios, \"Read full bio\" expand, padding 24-28px per profile section",
-                "sourcePath": "docs/contact-section.md"
+                "title": "FAQ + Contact Hybrid",
+                "prompt": "- **구조**: FAQ section above, contact form below\n- **목적**: Self-service first, contact as fallback\n- **레이아웃**: Accordion FAQ → \"Still need help?\" → Contact form\n- **전환**: Smooth transition between sections\n- **간격**: 60-80px spacing between FAQ and form\n- **헤드라인**: \"Didn't find what you need?\" above form\n- **Mobile**: FAQ accordion (standard mobile specs), form section with clear separation (background or padding), headline 20-24px, form full-width, gap between sections 40-48px, \"Jump to contact form\" link at top of FAQ section optional, maintain flow FAQ → Contact, reduced vertical spacing in FAQ (24-28px between items)",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "interactive-company-map": {
+            "appointment-booking-integration": {
                 "order": 7,
-                "title": "Interactive Company Map",
-                "prompt": "- **구조**: World map showing office locations with markers\n- **지도**: Embedded interactive map (Google Maps, Mapbox, custom SVG)\n- **마커**: Pin markers for each office location\n- **인터랙션**: Click marker to show office details (address, team size)\n- **정보 카드**: Popup or sidebar showing location info\n- **스타일**: Brand-styled map colors, custom pin icons\n- **Mobile**: Map full-width, height 300-400px, touch/pinch zoom enabled, location markers 32-40px (large touch target), info card as bottom sheet (not popup), card shows on marker tap, address 14-15px, team info 13-14px, \"Get directions\" link with large touch target, list view toggle (switch to list of locations), simplified map interactions, native maps app integration option",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Appointment Booking Integration",
+                "prompt": "- **구조**: Contact section with embedded calendar booking\n- **캘린더**: Integrated tool (Calendly, HubSpot Meetings, custom)\n- **예약**: Select date/time for call or meeting\n- **양식**: Name, email, phone captured before booking\n- **확인**: Email confirmation with calendar invite\n- **레이아웃**: Calendar widget prominent, info text above\n- **Mobile**: Calendar widget full-width (responsive embed), date picker mobile-optimized, time slot buttons min 44px height, form fields above calendar, input fields 48px height, timezone auto-detect with display, \"Book appointment\" button full-width 48-52px, confirmation message clear 16-18px, loading states visible, calendar loads progressively",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "career-join-us-integration": {
+            "location-based-contact-multiple-offices": {
                 "order": 8,
-                "title": "Career/Join Us Integration",
-                "prompt": "- **구조**: About section with CTA to careers/open positions\n- **컨텐츠**: Team/culture info above, \"Join our team\" section below\n- **직무**: List of 3-5 featured open positions\n- **CTA**: \"View all openings\" button linking to careers page\n- **레이아웃**: Smooth transition from about to careers\n- **디자인**: Visually connected but distinct sections\n- **Mobile**: About content stacked first, careers section with clear separation (background color change), position cards full-width, position title 16-18px, department/location 13-14px, card padding 20-24px, gap between cards 12-16px, \"View all openings\" button full-width (min 48px height), padding between sections 40-48px, optional: horizontal scroll for positions with snap points",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Location-Based Contact (Multiple Offices)",
+                "prompt": "- **구조**: Dropdown or tabs to select office location, shows specific contact\n- **선택**: Dropdown \"Select your location\" or tab per major office\n- **정보**: Address, phone, email, hours per location\n- **지도**: Embedded map updates based on selection\n- **레이아웃**: Selector at top, contact details + map below\n- **CTA**: \"Get directions\" link per location\n- **Mobile**: Dropdown full-width (48px height), location-specific info full-width card, address 15-16px, phone/email tappable, map 250-300px height, \"Get directions\" opens native maps app, office hours 13-14px, clear location name 18-20px bold, switch between locations smooth transition, padding 20-24px, gap between elements 16-20px",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "awards-and-recognition-display": {
+            "social-media-primary-contact": {
                 "order": 9,
-                "title": "Awards and Recognition Display",
-                "prompt": "- **구조**: Grid or carousel of awards, certifications, press mentions\n- **아이템**: Award logo/badge + year + title + issuing organization\n- **레이아웃**: 3-4 column grid or horizontal slider\n- **스타일**: Consistent card or badge design for all awards\n- **신뢰 요소**: Logos from reputable organizations (Forbes, Inc, etc.)\n- **간격**: 20-32px gap between award items\n- **Mobile**: 2-column grid or horizontal scroll (snap-scroll), badge/logo max-width 100-120px, year 13-14px, title 14-16px, organization 12-13px, card padding 16-20px, gap 12-16px, horizontal scroll option with 2-3 visible + peek, maintain logo aspect ratios, simple card design (not complex), awards grouped by year optional",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Social Media Primary Contact",
+                "prompt": "- **구조**: Social media links as primary contact method\n- **레이아웃**: Large social media icons + handles displayed\n- **플랫폼**: Twitter, LinkedIn, Facebook, Instagram with usernames\n- **CTA**: \"Message us on Twitter\" or \"Connect on LinkedIn\" buttons\n- **컨텐츠**: Brief text encouraging social contact\n- **대체**: Email shown as secondary option\n- **Mobile**: Social icons 48-56px (large, tappable), platform names 16-18px, handles 14-15px, \"Message on [Platform]\" buttons full-width 48px height, icons with labels (not icon-only), vertical stack or 2-column grid, padding 28-32px, centered layout, clear brand colors per platform, alternative email 15-16px below social options, generous spacing 20-24px between platforms",
+                "sourcePath": "docs/sections/support/contact-section.md"
             },
-            "video-introduction-behind-the-scenes": {
+            "support-ticket-system": {
                 "order": 10,
-                "title": "Video Introduction/Behind the Scenes",
-                "prompt": "- **구조**: Hero video with company introduction or culture showcase\n- **비디오**: 1-3 minute company video (CEO message, team interviews)\n- **플레이어**: Large video player (16:9 aspect) with custom controls\n- **컨텐츠**: Video above, supporting text/stats below\n- **CTA**: \"Learn more about us\" button below video\n- **자막**: Captions/subtitles available for accessibility\n- **Mobile**: Video full-width (16:9 maintained), height auto-responsive, native video controls, poster image high-quality, play button 56-64px (large, centered), video loads on interaction (not autoplay), captions enabled by default option, supporting text 14-15px below video, CTA button full-width or centered (min 48px), padding 20-24px around content, video optimized for mobile bandwidth, fallback to image if video fails",
-                "sourcePath": "docs/contact-section.md"
+                "title": "Support Ticket System",
+                "prompt": "- **구조**: Form to submit support ticket with priority/category\n- **필드**: Subject, Category (dropdown), Priority (dropdown), Description\n- **카테고리**: Technical, Billing, General, etc.\n- **우선순위**: Low, Medium, High, Urgent\n- **첨부**: File upload option for screenshots/logs\n- **추적**: Ticket number generated after submission\n- **Mobile**: All fields full-width, dropdown min-height 48px, category/priority as large touch-friendly selectors, description textarea min-height 120px, file upload button 48px height with clear label, submission confirmation with ticket number (large, 20-24px), \"Track your ticket\" link, form padding 24-28px, clear field labels 14-15px, validation messages 13-14px, ticket number copyable, estimated response time shown 13-14px",
+                "sourcePath": "docs/sections/support/contact-section.md"
             }
         }
     },
@@ -201,61 +201,61 @@
                 "order": 1,
                 "title": "Centered CTA Block with Single Prominent Button",
                 "prompt": "- **구조**: Single-column centered layout, compact vertical design\n- **컨텐츠**: Headline (H2, 32-40px) + subheadline/description (16-18px) + primary CTA button\n- **버튼**: Large prominent button (padding 16-20px 32-48px), high contrast color\n- **정렬**: Center-aligned all elements, max-width 700px\n- **배경**: Solid color, gradient, or subtle pattern to differentiate from surrounding sections\n- **여백**: Section padding 80-120px vertical\n- **Mobile**: Headline 24-28px, description 15-16px, button full-width or max-width 280px (centered), padding 14-16px vertical, section padding 48-64px vertical, increased line-height (1.5) for description, button min-height 48px, text 16px",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "split-cta-with-dual-action-buttons": {
                 "order": 2,
                 "title": "Split CTA with Dual Action Buttons",
                 "prompt": "- **구조**: Horizontal layout with two distinct CTAs side-by-side\n- **컨텐츠**: Shared headline above, two separate CTA blocks (primary + secondary)\n- **버튼 스타일**: Primary (filled, bold color) vs Secondary (outline or ghost style)\n- **레이아웃**: 50:50 split or 60:40 emphasis on primary\n- **용도**: \"Start Free Trial\" vs \"Schedule Demo\", \"Buy Now\" vs \"Learn More\"\n- **간격**: 24-32px gap between CTA blocks\n- **Mobile**: Stacked vertical layout, primary CTA first (top), full-width buttons, gap reduced to 16px, secondary CTA slightly smaller or less prominent (outline style maintained), padding 12-14px per button, clear visual hierarchy maintained, headline 22-26px centered above both",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "cta-banner-with-urgency-elements": {
                 "order": 3,
                 "title": "CTA Banner with Urgency Elements",
                 "prompt": "- **구조**: Horizontal banner layout, compact height (100-140px)\n- **긴급성 요소**: Countdown timer, limited offer badge, \"Only X spots left\" indicator\n- **컨텐츠**: Brief headline + urgency text + CTA button (inline horizontal)\n- **시각적 처리**: Contrasting background (often red, orange, or accent color), optional animated elements\n- **위치**: Can be full-width sticky at top/bottom of viewport\n- **타이머**: Digital countdown display (HH:MM:SS format)\n- **Mobile**: Stacked layout (timer/urgency above, headline + button below) or remained horizontal with reduced padding, height increased to 140-180px for stacked, headline 18-20px, button full-width or prominent centered, timer 24-32px digits, urgency text 13-14px, sticky positioning optional (better UX without it), padding 16-20px, timer updates visible without overlapping text",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "cta-card-with-feature-highlights": {
                 "order": 4,
                 "title": "CTA Card with Feature Highlights",
                 "prompt": "- **구조**: Card-based layout with headline, 3-4 key benefit bullets, and CTA\n- **카드 디자인**: Elevated card (shadow or border), rounded corners (16-20px), generous padding\n- **불릿 포인트**: Icon + short benefit statement (checkmark icons common)\n- **레이아웃**: Vertical stack - headline → bullets → button\n- **크기**: Max-width 500-600px, centered on page\n- **배경**: Card background contrasts with section background\n- **Mobile**: Full-width card with 16-20px margin, padding 24-32px, headline 22-26px, bullet text 14-15px, icon 20-24px, bullet spacing 12-16px vertical, button full-width (min 48px height), card rounded corners maintained (12-16px), clear visual separation from content above/below",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "full-width-cta-with-background-image-video": {
                 "order": 5,
                 "title": "Full-Width CTA with Background Image/Video",
                 "prompt": "- **구조**: Full-viewport-width section with background media, overlay content\n- **배경**: High-quality image or video with dark overlay (opacity 0.5-0.7)\n- **컨텐츠**: Large headline (40-56px) + subtext + CTA, all center-aligned\n- **텍스트 색상**: White or light color for contrast against dark overlay\n- **높이**: Medium height section (400-600px), not full viewport\n- **Z-index**: Background (z-0), overlay (z-1), content (z-2)\n- **Mobile**: Height reduced to 300-400px, headline 28-36px, subtext 15-16px, background video replaced with static poster image (performance), overlay opacity increased to 0.7-0.8 (better text readability), padding 32-48px vertical, button max-width 280px centered, background-position optimized for mobile (focal point visible), parallax disabled if present",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "inline-cta-with-form-input": {
                 "order": 6,
                 "title": "Inline CTA with Form Input",
                 "prompt": "- **구조**: Horizontal layout with email input + submit button combined\n- **폼**: Email input field (flexible width) + button (fixed width) inline\n- **레이아웃**: Input and button form single unit (border-radius continuous or separated)\n- **위에 컨텐츠**: Headline + short description above form\n- **validation**: Real-time email validation, error states\n- **버튼**: \"Get Started\", \"Subscribe\", \"Join Now\" etc.\n- **Mobile**: Stacked vertical layout (input above button) or remained inline with adjusted widths, input full-width with button below (recommended for better UX), input min-height 48px, button min-height 48px, headline 20-24px, description 14-15px, input font-size 16px (prevents zoom on iOS), button full-width, padding 12-16px, clear error messages (14px, visible below input), increased touch targets, form padding 20-24px",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "multi-step-cta-with-progress-indicator": {
                 "order": 7,
                 "title": "Multi-Step CTA with Progress Indicator",
                 "prompt": "- **구조**: Step-by-step CTA flow with visual progress (Step 1 of 3)\n- **진행 표시**: Progress bar or step dots showing current position\n- **컨텐츠**: Current step headline + brief instruction + action button\n- **전환**: Smooth transition between steps (fade or slide)\n- **네비게이션**: \"Next\" button primary, \"Back\" button secondary, \"Skip\" optional\n- **완료**: Final step shows success message and primary CTA\n- **Mobile**: Progress indicator at top (horizontal dots or minimal bar), headline 20-24px, instruction text 14-15px, button full-width (min 48px height), step transition simplified (fade only, no slide), back button as text link (not prominent button), clear step count \"Step 2 of 3\" (14px), single column form fields, reduced animations for performance, swipe gesture for next/back optional",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "social-proof-cta-with-testimonial": {
                 "order": 8,
                 "title": "Social Proof CTA with Testimonial",
                 "prompt": "- **구조**: CTA content with integrated customer testimonial or stat\n- **레이아웃**: Testimonial/stat above or beside CTA button\n- **컨텐츠**: \"Join 10,000+ customers\" + short quote + avatar + CTA button\n- **신뢰 요소**: Customer logo, rating stars, or verified badge\n- **시각적**: Testimonial in lighter/muted style, CTA button prominent\n- **통계**: Bold numbers (24-32px) with descriptive text\n- **Mobile**: Vertical stack (stat/testimonial → headline → button), stat numbers 28-36px, testimonial text 14-15px, avatar 40-48px, headline 22-26px, button full-width, testimonial quote shortened if too long, rating stars 16-18px, customer logo max-width 100px, padding 24-32px, clear visual hierarchy with spacing (16-20px between elements)",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "sticky-bottom-cta-bar": {
                 "order": 9,
                 "title": "Sticky Bottom CTA Bar",
                 "prompt": "- **구조**: Fixed position bar at bottom of viewport, always visible\n- **컨텐츠**: Compact headline/offer text + CTA button (horizontal layout)\n- **높이**: Slim bar (56-72px), doesn't obstruct content significantly\n- **위치**: Fixed bottom, z-index above content, box-shadow for depth\n- **닫기**: Optional close/dismiss X button in corner\n- **등장**: Appears after scroll threshold or time delay\n- **Mobile**: Maintained fixed bottom, height 64-80px (taller for better touch), button 40-44px height, text 14-15px, padding 12-16px, safe-area-inset-bottom applied (notch devices), dismiss X icon 24px (top-right), text truncated if needed, button prominent (fills available space), avoid conflict with browser UI, semi-transparent background (backdrop-blur) optional",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             },
             "cta-grid-with-multiple-options": {
                 "order": 10,
                 "title": "CTA Grid with Multiple Options",
                 "prompt": "- **구조**: 2-3 column grid presenting different CTA paths\n- **카드**: Each option as separate card with icon/image, title, description, button\n- **용도**: \"For Individuals\", \"For Teams\", \"For Enterprise\" options\n- **레이아웃**: Equal-width cards with consistent styling\n- **강조**: Optional \"Popular\" or \"Recommended\" badge on one card\n- **간격**: 24-32px gap between cards\n- **Mobile**: Single-column stack or 2-column for 2 options, card full-width (1-col) or 50% (2-col), icon 40-48px, title 18-20px, description 14-15px, button full-width within card (min 44px height), gap 16-20px, badge 12-14px, card padding 20-24px, popular card highlighted with border or background, maintain equal visual weight across cards, recommended: 1-col stack for better readability",
-                "sourcePath": "docs/CTA-section.md"
+                "sourcePath": "docs/sections/conversion/CTA-section.md"
             }
         }
     },
@@ -266,61 +266,61 @@
                 "order": 1,
                 "title": "Classic Accordion FAQ",
                 "prompt": "- **구조**: Vertical stack of collapsible Q&A items\n- **아이템**: Question (bold, clickable) + chevron icon + expandable answer panel\n- **상태**: One or multiple panels open simultaneously\n- **애니메이션**: Smooth max-height transition (300-400ms), chevron rotation 180deg\n- **스타일**: Border or background color per item, hover state on question\n- **레이아웃**: Single column, max-width 800-900px centered\n- **Mobile**: Question min-height 56px (full touch target), question text 15-17px bold, answer text 14-15px with line-height 1.6, chevron 20-24px, padding 16-20px, transition duration 300ms, one panel open at a time (recommended), background tap to close current panel, increased touch target for entire question row, border-bottom separation, scroll to opened panel (smooth scroll)",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "two-column-faq-grid": {
                 "order": 2,
                 "title": "Two-Column FAQ Grid",
                 "prompt": "- **구조**: Questions and answers in 2-column grid layout\n- **레이아웃**: Left column Q&A, right column Q&A, alternating\n- **스타일**: Question bold (16-18px) + answer regular (14-16px)\n- **간격**: 32-48px vertical spacing between Q&A pairs\n- **비접이식**: All answers visible by default (not accordion)\n- **시각적**: Optional icons or numbers before questions\n- **Mobile**: Single-column stack (left column first, then right), question 16-18px bold, answer 14-15px, spacing reduced to 24-32px, icons 20-24px if present, padding 20-24px per Q&A block, optional dividers between items, maintain visual rhythm, no horizontal scroll",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "categorized-faq-with-tab-navigation": {
                 "order": 3,
                 "title": "Categorized FAQ with Tab Navigation",
                 "prompt": "- **구조**: Category tabs at top, accordion FAQ list below\n- **탭**: Horizontal tabs for categories (Billing, Technical, Account, etc.)\n- **컨텐츠**: Tab content switches to show relevant FAQs only\n- **레이아웃**: Tabs above, FAQ accordion below\n- **필터**: Shows 5-10 questions per category\n- **전환**: Fade transition when switching categories\n- **Mobile**: Tabs horizontal scroll (snap-scroll), tab min-width 120-140px, tab height 44-48px, tab text 14-15px, FAQ accordion below tabs, category indicator visible (breadcrumb style), swipe between categories optional, sticky tabs on scroll, reduced animation complexity, FAQ items same as classic accordion mobile specs, clear active tab indicator (underline or background)",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "search-enabled-faq": {
                 "order": 4,
                 "title": "Search-Enabled FAQ",
                 "prompt": "- **구조**: Search bar at top, filterable FAQ list below\n- **검색**: Input field filters questions in real-time as user types\n- **하이라이트**: Matching keywords highlighted in results\n- **결과**: Shows count \"Showing 5 of 20 questions\"\n- **대체**: \"No results\" message with contact CTA if no matches\n- **레이아웃**: Search bar full-width, FAQ list below\n- **Mobile**: Search input full-width (min-height 48px), input font-size 16px (no iOS zoom), search icon 20-24px, clear button visible when typing, results count 13-14px, highlighted text with background color, FAQ items accordion style, keyboard dismisses on scroll, search placeholder clear \"Search FAQs...\", no-results message 15-16px with contact button below (full-width), padding 16-20px",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "faq-with-video-answers": {
                 "order": 5,
                 "title": "FAQ with Video Answers",
                 "prompt": "- **구조**: Question list with video thumbnail answers\n- **미디어**: Each FAQ has video explanation option\n- **레이아웃**: Question + text answer + \"Watch video\" thumbnail/button\n- **썸네일**: Small video preview (16:9, 200-300px width)\n- **재생**: Click to play inline or open modal\n- **대체**: Text answer always present for those who prefer reading\n- **Mobile**: Question accordion (text answer hidden until expanded), video thumbnail full-width or 60-70% width within answer, play button 48-56px (large touch target), video plays inline (not modal, better UX), thumbnail 16:9 aspect-ratio, question 15-17px, text answer 14-15px, \"Watch instead\" button/link 14-15px, video loads on demand (not preload), clear separation between text and video option, padding 16-20px",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "minimal-faq-with-inline-answers": {
                 "order": 6,
                 "title": "Minimal FAQ with Inline Answers",
                 "prompt": "- **구조**: Simple Q&A pairs without accordion, all expanded\n- **레이아웃**: Question and answer always visible, stacked vertically\n- **스타일**: Question bold larger text, answer regular smaller text\n- **간격**: Generous whitespace between Q&A pairs (40-60px)\n- **디자인**: Clean, scannable, no interactive elements\n- **용도**: Short FAQ section with 4-6 critical questions only\n- **Mobile**: Same structure maintained (all visible), question 17-19px bold, answer 14-15px with line-height 1.6-1.7, spacing reduced to 32-40px, padding 24-28px horizontal, optional alternating background colors for visual separation, easy scanning, no interaction required, works well for critical/legal FAQs",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "faq-with-contact-cta-integration": {
                 "order": 7,
                 "title": "FAQ with Contact CTA Integration",
                 "prompt": "- **구조**: FAQ accordion + \"Still have questions?\" CTA at bottom\n- **CTA**: Contact form, live chat button, or \"Talk to Sales\" link\n- **레이아웃**: FAQ list above, prominent CTA card below\n- **카드**: Background color, icon, headline, description, action button\n- **목적**: Provide escalation path after self-service\n- **시각적**: Clear separation between FAQ and CTA (60-80px gap)\n- **Mobile**: FAQ accordion (standard mobile specs), CTA card full-width with 16-20px margin, icon 40-48px, headline 20-24px, description 14-15px, CTA button full-width (min 48px height), card padding 28-32px, background color contrast, gap between FAQ and CTA 40-48px, alternative: sticky bottom CTA bar that appears after scrolling through FAQs",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "interactive-faq-with-related-questions": {
                 "order": 8,
                 "title": "Interactive FAQ with Related Questions",
                 "prompt": "- **구조**: Accordion FAQ with \"Related questions\" links in each answer\n- **관련 질문**: 2-3 links at bottom of each answer to jump to related FAQs\n- **네비게이션**: Click related link → smooth scroll to that question + auto-expand\n- **레이아웃**: Answer text + horizontal list of related question chips/links\n- **시각적**: Related links styled as chips or inline links with arrow icons\n- **목적**: Guide user through connected information\n- **Mobile**: Related questions stacked vertically (not horizontal), link height min 44px (full touch target), link text 14-15px with arrow icon, smooth scroll and auto-expand maintained, clear visual separation between answer and related links (border or spacing), max 2-3 related questions shown, answer text 14-15px, related section padding-top 16px with border-top, touch feedback on related question tap",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "faq-with-emoji-icon-indicators": {
                 "order": 9,
                 "title": "FAQ with Emoji/Icon Indicators",
                 "prompt": "- **구조**: Each FAQ question has emoji or icon prefix\n- **아이콘**: Relevant icon showing topic category (💳 billing, 🔧 technical, 📦 shipping)\n- **레이아웃**: Icon + question + chevron in accordion header\n- **시각적**: Colorful, friendly, easy to scan by icon\n- **크기**: Icon 24-32px, adequate spacing from text\n- **목적**: Visual categorization, improved scannability\n- **Mobile**: Icon 24-28px (visible but not overwhelming), icon margin-right 12-16px, question text wraps properly (not pushed by icon), question 15-17px, answer 14-15px, accordion same as classic mobile specs, icons consistent style (all emoji or all icons, not mixed), accessible alt text for icons, color-coded categories optional (icon + background tint)",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             },
             "nested-faq-sub-questions": {
                 "order": 10,
                 "title": "Nested FAQ (Sub-Questions)",
                 "prompt": "- **구조**: Main questions with expandable sub-questions within answers\n- **계층**: Parent question → answer with sub-questions → sub-answers\n- **인터랙션**: Two-level accordion (parent expands, then child expands)\n- **인덴트**: Sub-questions visually indented (20-40px)\n- **복잡도**: Use sparingly, max 2-3 sub-questions per parent\n- **스타일**: Parent bold larger, sub-questions smaller regular weight\n- **Mobile**: Simplified to single-level accordion (flatten structure), or maintain nesting with clear visual hierarchy, parent question 16-18px bold, sub-question 14-15px semi-bold, sub-answer 13-14px, increased indent (16-24px) with border-left indicator, parent padding 16-20px, sub-question padding 12-16px, avoid deep nesting (max 1 level on mobile), consider alternative: parent with \"See also\" expandable section instead of nested accordion",
-                "sourcePath": "docs/FAQ-secton.md"
+                "sourcePath": "docs/sections/support/FAQ-secton.md"
             }
         }
     },
@@ -331,49 +331,49 @@
                 "order": 1,
                 "title": "Three-Column Icon Feature Grid with Hover States",
                 "prompt": "- **구조**: CSS Grid 3-column layout, equal-width columns with 24-32px gap\n- **카드 구성**: Icon container (64x64px) + Heading (H3, 24px) + Body text (16px, line-height 1.6)\n- **아이콘**: Line-style icons 또는 filled icons with brand color accent\n- **인터랙션**: Hover시 card elevation increase (box-shadow transition), subtle transform translateY(-8px)\n- **반응형**: Desktop 3-col → Tablet 2-col → Mobile 1-col stack\n- **여백**: Padding 32-40px per card, margin-bottom 80px for section spacing\n- **Mobile**: Single-column stack, full-width cards, icon 56x56px, heading 20-22px, body text 15-16px, card padding 24-32px, gap between cards 16-20px, hover effects replaced with tap states (no translateY), increased touch target for entire card, section margin-bottom 60px",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "alternating-image-text-feature-showcase-zigzag-layout": {
                 "order": 2,
                 "title": "Alternating Image-Text Feature Showcase (Zigzag Layout)",
                 "prompt": "- **구조**: Stacked rows with alternating 60:40 split layout (image-text / text-image)\n- **이미지 영역**: High-fidelity mockup 또는 feature screenshot with subtle shadow, aspect-ratio 16:9\n- **텍스트 영역**: Vertical-centered content with eyebrow label, headline, description, optional CTA link\n- **정렬**: Odd rows - image left / text right, Even rows - text left / image right\n- **간격**: 80-120px vertical spacing between features, 60px horizontal gap\n- **애니메이션**: Scroll-triggered fade-in with staggered delay (IntersectionObserver API)\n- **Mobile**: Single-column stack, image always at top (no alternating), image full-width with 16:9 aspect-ratio, text below with padding 24-32px, headline 24-28px, description 15-16px, eyebrow 12-14px, vertical spacing reduced to 48-60px between features, horizontal gap removed, CTA link increased tap target (min 44px height), animation delay removed for faster load perception",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "tabbed-feature-interface-with-content-switching": {
                 "order": 3,
                 "title": "Tabbed Feature Interface with Content Switching",
                 "prompt": "- **구조**: Horizontal tab navigation + single content display area\n- **탭 바**: Pill-style buttons with active state (background fill, color change), smooth sliding indicator\n- **컨텐츠 영역**: Tab panel with fade transition (opacity + transform), 600px max-width for readability\n- **레이아웃**: Tabs positioned above content, sticky positioning optional for long pages\n- **상태 관리**: Active tab highlighting with aria-selected attribute for accessibility\n- **인터랙션**: Click/tap to switch, smooth transition 300ms cubic-bezier easing\n- **Mobile**: Tabs horizontal scroll (overflow-x: scroll, scroll-snap), tab buttons min-width 120-140px, smaller font (14px), content area full-width (no max-width), padding 20-24px, sticky tabs on scroll, swipe gesture support for content switching, simplified sliding indicator or removed, increased tap target height (min 44px), reduced transition duration (200ms for snappier feel)",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "bento-style-feature-mosaic-with-variable-card-sizes": {
                 "order": 4,
                 "title": "Bento-Style Feature Mosaic with Variable Card Sizes",
                 "prompt": "- **구조**: CSS Grid with explicit grid-template-areas, asymmetric module sizing\n- **카드 크기**: Large (2x2), Medium (2x1 or 1x2), Small (1x1) mixed composition\n- **내용 밀도**: Large cards - full feature explanation with visual, Small cards - icon + concise label\n- **시각적 계층**: Primary features in large modules with high contrast, secondary features in smaller units\n- **간격**: 16-24px gap, rounded corners 16-20px border-radius\n- **배경**: Alternating background colors or gradient fills for visual interest\n- **Mobile**: Single-column stack (all cards full-width), maintain visual hierarchy through order and padding, large cards first, gap reduced to 12-16px, card min-height 200px for large, 120px for small, all text readable (no truncation), padding per card 20-24px, rounded corners 12px, maintain color/gradient treatments, staggered entrance animation (100ms delay per card)",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "accordion-feature-list-with-expandable-details": {
                 "order": 5,
                 "title": "Accordion Feature List with Expandable Details",
                 "prompt": "- **구조**: Vertical stack of collapsible accordion items, single-column layout\n- **아코디언 헤더**: Feature title + expand/collapse icon (chevron rotation 180deg transition)\n- **컨텐츠 패널**: Hidden by default (max-height: 0 → auto), padding transition for smooth expansion\n- **상태**: One or multiple panels can be open simultaneously (controlled component state)\n- **인터랙션**: Click header to toggle, smooth height transition 400ms ease-in-out\n- **접근성**: Proper ARIA attributes (aria-expanded, role=\"button\"), keyboard navigation support\n- **Mobile**: Optimized for mobile (native behavior), header min-height 56px (full touch target), title font-size 16-18px, chevron 20-24px, content padding 16-20px, increased line-height (1.6-1.7) for readability, single panel open at a time (mobile optimization), smooth scroll to opened panel, reduced transition duration (300ms), clear visual separation between items (border or background)",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "horizontal-scrolling-feature-cards-carousel-slider": {
                 "order": 6,
                 "title": "Horizontal Scrolling Feature Cards (Carousel/Slider)",
                 "prompt": "- **구조**: Overflow-x scroll container with snap-scroll behavior (scroll-snap-type: x mandatory)\n- **카드**: Fixed-width feature cards (320-400px), scroll-snap-align: start\n- **네비게이션**: Prev/Next arrow buttons + dot indicators for current position\n- **터치**: Swipe gesture support on mobile, momentum scrolling enabled\n- **페이징**: 3-4 cards visible on desktop, 1-2 on mobile, partial card peek for scroll hint\n- **인터랙션**: Auto-scroll optional with pause on hover, manual control preferred\n- **Mobile**: Single card view (card width 85-90vw), prominent partial peek (10-15% of next card), arrow buttons hidden (swipe only), dot indicators enlarged (12-16px with spacing), snap-scroll enhanced (scroll-snap-stop: always), card padding 20-24px, reduced card content for mobile (icon + title + short description), horizontal padding 16-20px on container, momentum scrolling optimized",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "split-screen-feature-comparison-with-toggle-switch": {
                 "order": 7,
                 "title": "Split-Screen Feature Comparison with Toggle Switch",
                 "prompt": "- **구조**: 50:50 split layout with vertical divider, left/right feature comparison\n- **토글 스위치**: Center-aligned toggle to switch between two feature sets or modes\n- **컨텐츠**: Mirror layout on both sides - headline, list of sub-features, supporting image\n- **전환 효과**: Cross-fade animation when toggling (opacity transition + slight scale transform)\n- **용도**: \"Basic vs Pro\", \"Before vs After\", \"Option A vs Option B\" 비교\n- **반응형**: Desktop split → Mobile stacked with toggle above\n- **Mobile**: Stacked layout (toggle at top), selected option displayed first (full-width), inactive option below with reduced opacity (0.5-0.6), toggle switch enlarged (width 64-72px, height 36-40px), clear labels (16px font), smooth scroll to selected section, headline 22-26px, feature list items 15-16px, padding 24-32px per section, scale animation removed (performance), optional: show only active section and hide inactive",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             },
             "interactive-feature-matrix-with-filtering": {
                 "order": 8,
                 "title": "Interactive Feature Matrix with Filtering",
                 "prompt": "- **구조**: Grid of feature cards with category filter buttons at top\n- **필터 바**: Horizontal button group (All, Category 1, Category 2...) with active state styling\n- **카드 그리드**: 3-4 column responsive grid that re-renders based on filter selection\n- **필터 로직**: Click filter button → fade out non-matching cards (opacity 0 + scale 0.95) → fade in matches\n- **애니메이션**: Staggered re-entrance animation with 50ms delay per card\n- **카운터**: Display filtered count \"Showing X of Y features\" for user feedback\n- **상태**: Active filter button with distinct visual treatment (filled background, bold text)\n- **Mobile**: Single-column card grid, filter buttons horizontal scroll (snap-scroll), button min-width 100-120px, filter bar sticky on scroll, card full-width with padding 20-24px, reduced animation complexity (simple fade without scale), stagger delay removed (all appear together), counter text 14px below filters, active filter button larger tap target (min 44px height), simplified grid transitions (instant rather than animated for better mobile UX), card gap 12-16px",
-                "sourcePath": "docs/feature-section-pattern.md"
+                "sourcePath": "docs/sections/conversion/feature-section-pattern.md"
             }
         }
     },
@@ -384,61 +384,61 @@
                 "order": 1,
                 "title": "Multi-Column Footer with Link Categories",
                 "prompt": "- **구조**: 4-5 column grid layout with link group headers\n- **컬럼 구성**: Product, Company, Resources, Legal, Contact (each with 4-6 sub-links)\n- **헤더**: Bold category headers (14-16px), uppercase or title-case\n- **링크**: Regular weight (400), 14px, subtle hover color change\n- **반응형**: Desktop 5-col → Tablet 3-col → Mobile accordion or 2-col\n- **간격**: 40-60px vertical padding, 24-32px gap between columns\n- **Mobile**: Accordion layout (collapsed by default), 2-column grid for links, increased tap target size (min 44px height), 16px horizontal padding",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "minimal-footer-with-centered-content": {
                 "order": 2,
                 "title": "Minimal Footer with Centered Content",
                 "prompt": "- **구조**: Single-column centered layout, compact design\n- **컨텐츠**: Logo + single row of links + copyright + social icons\n- **정렬**: Center-aligned all elements, horizontal link spacing\n- **높이**: Minimal vertical space (80-120px total)\n- **배경**: Solid color or subtle gradient, clear separation from content\n- **타이포그래피**: Small text (12-14px), tight line-height\n- **Mobile**: Remains centered, links stack vertically or wrap to 2 rows, social icons 32px size for easy tapping, increased vertical spacing (100-140px)",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "newsletter-signup-footer-with-cta": {
                 "order": 3,
                 "title": "Newsletter Signup Footer with CTA",
                 "prompt": "- **구조**: Two-section layout - top CTA area + bottom link grid\n- **상단**: Prominent newsletter signup form with headline, input field, submit button\n- **폼**: Inline layout (input + button horizontal), email validation\n- **하단**: Standard multi-column link layout\n- **시각적 강조**: Background color or border separation between sections\n- **간격**: 60-80px padding for CTA area, clear visual hierarchy\n- **Mobile**: Stacked layout (input + button vertical), full-width form elements, button min-height 48px, link columns convert to accordion, 24px horizontal padding",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "app-download-footer-with-store-badges": {
                 "order": 4,
                 "title": "App Download Footer with Store Badges",
                 "prompt": "- **구조**: Split layout - left content/links + right app promotion\n- **좌측**: Standard link columns and company info\n- **우측**: App preview mockup + download badges (App Store, Google Play)\n- **배지**: Standard platform badges (120x40px), stacked vertically\n- **QR 코드**: Optional QR code for mobile app download\n- **반응형**: Desktop side-by-side → Mobile stacked with app section first\n- **Mobile**: App section at top with prominent badges (135x40px for better tap), QR code hidden, mockup image scaled down or hidden, links accordion below",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "footer-with-integrated-contact-form": {
                 "order": 5,
                 "title": "Footer with Integrated Contact Form",
                 "prompt": "- **구조**: Wide layout with contact form as prominent element\n- **폼 위치**: Dedicated column or full-width section above link grid\n- **폼 필드**: Name, email, message textarea with submit button\n- **레이아웃**: Form on left/right, links on opposite side\n- **validation**: Real-time validation, success/error states\n- **백업**: Email address and phone number as alternative contact methods\n- **Mobile**: Full-width form at top, input fields min-height 48px, textarea min-height 120px, large submit button, links section below as accordion",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "rich-footer-with-social-feed-integration": {
                 "order": 6,
                 "title": "Rich Footer with Social Feed Integration",
                 "prompt": "- **구조**: Multi-section footer with embedded social media feed\n- **소셜 피드**: Instagram grid, Twitter timeline, or LinkedIn posts (3-6 items)\n- **레이아웃**: Feed module as one column in multi-column grid\n- **라이브 컨텐츠**: API integration or static curated posts\n- **CTA**: \"Follow us\" button below feed\n- **반응형**: Feed module full-width on mobile\n- **Mobile**: Feed shows 3 items only (1 row), larger thumbnails (100x100px minimum), horizontal scroll for more items, feed at top of footer for engagement",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "accordion-style-mobile-first-footer": {
                 "order": 7,
                 "title": "Accordion-Style Mobile-First Footer",
                 "prompt": "- **구조**: Collapsible sections for mobile, expanded on desktop\n- **아코디언**: Each category header clickable, chevron icon for expand/collapse\n- **애니메이션**: Smooth max-height transition (300-400ms), rotate chevron 180deg\n- **데스크탑**: All sections expanded by default, no accordion behavior\n- **상태 관리**: Independent collapse/expand per section\n- **간격**: Clear padding for touch targets (minimum 44px height)\n- **Mobile**: Native behavior, all sections collapsed initially, header font-size 16px, chevron 20px, smooth scrolling, maintain scroll position when toggling",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "sticky-footer-with-back-to-top-button": {
                 "order": 8,
                 "title": "Sticky Footer with Back-to-Top Button",
                 "prompt": "- **구조**: Standard multi-column footer with fixed back-to-top control\n- **버튼**: Circular FAB (48-56px) in bottom-right corner, arrow-up icon\n- **인터랙션**: Smooth scroll to top on click, fade-in after scrolling threshold\n- **애니메이션**: Scale and fade transition (200ms), pulse effect optional\n- **위치**: Fixed position, z-index above footer content\n- **접근성**: Keyboard accessible, clear focus state\n- **Mobile**: Button 56px diameter, 16px from bottom and right edges, appears after 300px scroll, haptic feedback on tap, avoid conflict with browser chrome",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "footer-with-legal-disclaimer-section": {
                 "order": 9,
                 "title": "Footer with Legal Disclaimer Section",
                 "prompt": "- **구조**: Three-tier layout - link columns + legal bar + copyright bar\n- **법률 섹션**: Dedicated area for disclaimers, terms summary, compliance info\n- **배경**: Slightly different background color for visual separation\n- **텍스트**: Small font (11-12px), multiple paragraphs if needed\n- **링크**: Privacy policy, terms of service, cookie policy prominently placed\n- **간격**: Clear padding between tiers (24-32px)\n- **Mobile**: Link columns accordion at top, legal section full-width with 14px font (improved readability), copyright bar 12px, all sections stacked vertically",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             },
             "footer-with-office-locations-map": {
                 "order": 10,
                 "title": "Footer with Office Locations Map",
                 "prompt": "- **구조**: Wide footer with embedded map or location cards\n- **지도**: Interactive map embed (Google Maps) showing office locations\n- **위치 카드**: Alternative to map - cards with address, phone, office photo\n- **레이아웃**: Map/locations on left, standard link columns on right\n- **크기**: Map height 300-400px, full-width on mobile\n- **인터랙션**: Click location for details, directions link\n- **Mobile**: Map height 250px, full-width at top of footer, location cards horizontal scroll below map (180px width each), tap card to open maps app, links section accordion below",
-                "sourcePath": "docs/footer-section.md"
+                "sourcePath": "docs/sections/support/footer-section.md"
             }
         }
     },
@@ -449,31 +449,31 @@
                 "order": 1,
                 "title": "Full-Viewport Centered Hero with Split-Screen Layout",
                 "prompt": "- **구조**: 100vh 풀스크린 히어로, 좌우 50:50 스플릿 레이아웃\n- **좌측**: Vertical-centered text container with headline (H1), subheadline (H2/P), dual CTA buttons (primary/secondary)\n- **우측**: Hero image/illustration with subtle parallax scroll effect\n- **타이포그래피**: Large-scale display font (64-72px), high contrast ratio (WCAG AAA)\n- **인터랙션**: Fade-in on load, staggered animation with 200ms delay between elements\n- **반응형**: Desktop 50:50 split → Tablet 60:40 → Mobile single-column stack\n- **Mobile**: Single-column vertical stack, image above or below text, headline 36-48px, subheadline 18-20px, CTA buttons stacked vertically (full-width or max-width 280px centered), min-height 100vh with safe-area-inset, padding 24-32px horizontal, parallax effect disabled for performance",
-                "sourcePath": "docs/hero-section-pattern.md"
+                "sourcePath": "docs/sections/experience/hero-section-pattern.md"
             },
             "minimal-centered-hero-with-background-video-image-overlay": {
                 "order": 2,
                 "title": "Minimal Centered Hero with Background Video/Image Overlay",
                 "prompt": "- **구조**: Single-column centered layout, full-viewport height with background media\n- **배경**: Auto-playing muted video loop 또는 high-resolution hero image with gradient overlay (opacity 0.6-0.7)\n- **컨텐츠**: Center-aligned content stack - eyebrow text (overline), headline, body copy, single prominent CTA\n- **Z-index 레이어링**: Background media (z-0), gradient overlay (z-1), content layer (z-2)\n- **타이포그래피**: Maximum contrast white text on dark overlay, 48-56px headline\n- **반응형**: Content max-width reduces from 900px to 100% with padding\n- **Mobile**: Headline 32-40px, body copy 16-18px, CTA full-width button (max-width 320px), background video replaced with static image (performance), gradient overlay opacity increased to 0.75 for better text readability, padding 20-24px, eyebrow text 12-14px",
-                "sourcePath": "docs/hero-section-pattern.md"
+                "sourcePath": "docs/sections/experience/hero-section-pattern.md"
             },
             "asymmetric-grid-hero-with-floating-card-components": {
                 "order": 3,
                 "title": "Asymmetric Grid Hero with Floating Card Components",
                 "prompt": "- **구조**: CSS Grid 12-column layout, asymmetric content distribution (8-4 또는 7-5 비율)\n- **메인 영역**: Headline + body copy with left-aligned text block, max-width 600px\n- **서브 영역**: Floating card components with glassmorphism effect (backdrop-blur, semi-transparent background)\n- **그리드 배치**: Primary content spans columns 1-8, cards positioned with grid-area overlapping\n- **마이크로인터랙션**: Hover state with transform scale(1.05), smooth transition 300ms ease-out\n- **반응형**: Desktop asymmetric → Tablet 60:40 → Mobile single-column\n- **Mobile**: Single-column stack, cards below main content (no overlap), glassmorphism reduced or removed (performance), headline 32-36px, body copy 16px max-width 100%, cards horizontal scroll or 2-column grid, padding 20px, no hover effects (replaced with tap states)",
-                "sourcePath": "docs/hero-section-pattern.md"
+                "sourcePath": "docs/sections/experience/hero-section-pattern.md"
             },
             "bento-grid-hero-with-multi-content-modules": {
                 "order": 4,
                 "title": "Bento Grid Hero with Multi-Content Modules",
                 "prompt": "- **구조**: Bento box style grid layout, 2x2 또는 3x2 모듈 배치\n- **모듈 구성**: Hero headline module (large), feature highlights (medium), social proof/stats (small), visual media module\n- **반응형**: Desktop 4-column grid → Mobile single-column stack\n- **간격**: Consistent gap spacing (24-32px), rounded corners (12-16px border-radius)\n- **계층**: Primary module 2x size, secondary modules 1x size with visual weight variation\n- **Mobile**: Single-column vertical stack, all modules full-width, headline module at top (hero message first), reduced gap (16-20px), module height auto (not fixed), padding 16-20px, primary module maintains 1.5x visual emphasis through typography and padding, swipe indicators for any horizontal scroll modules",
-                "sourcePath": "docs/hero-section-pattern.md"
+                "sourcePath": "docs/sections/experience/hero-section-pattern.md"
             },
             "scroll-triggered-reveal-hero-with-layered-depth": {
                 "order": 5,
                 "title": "Scroll-Triggered Reveal Hero with Layered Depth",
                 "prompt": "- **구조**: Multi-layer composition with foreground/midground/background elements\n- **레이어링**:\n    - Background: Ambient gradient or texture (fixed position)\n    - Midground: Large typography with clipping mask effect\n    - Foreground: CTA elements and supporting copy\n- **스크롤 인터랙션**: Parallax scrolling with different transform rates per layer (background: 0.5x, midground: 0.8x, foreground: 1x)\n- **진입 애니메이션**: Opacity fade + translateY transform with intersection observer trigger\n- **타이포그래피**: Extra-large display text (80-120px) with text-fill gradient or clipping effect\n- **반응형**: Layer complexity reduces on smaller screens\n- **Mobile**: Parallax effect disabled (performance and UX), midground text 48-64px (readable size), simplified layer structure (2 layers instead of 3), background fixed position removed (scroll with content), foreground headline 28-36px, reduced animation complexity, padding 24px, clipping mask effect simplified or removed, static composition preferred over scroll-triggered for better mobile UX",
-                "sourcePath": "docs/hero-section-pattern.md"
+                "sourcePath": "docs/sections/experience/hero-section-pattern.md"
             }
         }
     },
@@ -484,61 +484,61 @@
                 "order": 1,
                 "title": "Numbered Step Cards (Horizontal Layout)",
                 "prompt": "- **구조**: Horizontal row of 3-4 step cards with large numbers\n- **카드 구성**: Number badge (1, 2, 3) + icon + headline + description\n- **넘버링**: Large circular or square badge (48-64px) with number\n- **연결**: Optional arrow or dotted line between steps\n- **레이아웃**: Equal-width cards, flexbox or grid distribution\n- **간격**: 24-40px gap between cards\n- **Mobile**: Single-column vertical stack, card full-width, number badge 40-48px (top-left or centered), icon 32-40px, headline 18-22px, description 14-15px, card padding 24-28px, gap between cards 20-24px, connecting arrows removed or simplified to vertical line, border or background per card, maintain step number prominence",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "vertical-timeline-with-alternating-content": {
                 "order": 2,
                 "title": "Vertical Timeline with Alternating Content",
                 "prompt": "- **구조**: Vertical timeline with steps alternating left and right\n- **타임라인**: Center vertical line with node markers for each step\n- **노드**: Circle markers (24-32px) on timeline, connected by line\n- **컨텐츠**: Step content alternates left/right of timeline\n- **이미지**: Optional screenshot or illustration per step\n- **간격**: 80-120px vertical spacing between steps\n- **Mobile**: Timeline moves to left side (not center), all content to right of timeline, timeline line 2-4px width, node 20-24px, content padding-left 40-60px from timeline, step headline 18-20px, description 14-15px, image full-width within content area, vertical spacing 48-60px, no alternating layout (all same side), clear visual flow top to bottom",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "animated-process-flow-diagram": {
                 "order": 3,
                 "title": "Animated Process Flow Diagram",
                 "prompt": "- **구조**: Flowchart-style diagram with animated transitions\n- **요소**: Boxes for steps, arrows showing flow direction\n- **애니메이션**: Sequential reveal on scroll, arrow path animation\n- **분기**: Optional branching paths or decision points\n- **레이아웃**: Can be horizontal, vertical, or diagonal flow\n- **인터랙션**: Hover/click on step for details, auto-play animation\n- **Mobile**: Simplified to vertical single-path flow (no complex branching), box full-width minus padding, arrow simplified (straight vertical), animation reduced or removed (performance), step box padding 20-24px, text 14-16px, auto-play on viewport entry (no hover), tap box for expansion if details present, flowchart symbols simplified, focus on clarity over visual complexity",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "video-walkthrough-with-step-markers": {
                 "order": 4,
                 "title": "Video Walkthrough with Step Markers",
                 "prompt": "- **구조**: Large video player with step markers/chapters below\n- **비디오**: Product demo or tutorial video (16:9 aspect)\n- **챕터**: Clickable timestamps/chapters below video\n- **마커**: Visual indicators on video timeline for each step\n- **설명**: Text description of each step below or beside video\n- **재생**: Click chapter to jump to that section of video\n- **Mobile**: Video full-width (16:9 ratio maintained), video player native controls, chapters horizontal scroll below video (snap-scroll), chapter button min-width 120-140px, chapter text 13-14px, timestamp visible, video height auto (responsive), step descriptions accordion below chapters, description text 14-15px, video loads on interaction (not autoplay), clear chapter active state, padding 16-20px",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "tab-based-process-explanation": {
                 "order": 5,
                 "title": "Tab-Based Process Explanation",
                 "prompt": "- **구조**: Horizontal tabs for steps, content area shows selected step\n- **탭**: Tab navigation (Step 1, Step 2, Step 3...) with active state\n- **컨텐츠**: Large content area with image/video + detailed text\n- **레이아웃**: Tabs above, content below with smooth transition\n- **진행**: Optional progress bar showing completion through steps\n- **CTA**: \"Next step\" button to guide through sequence\n- **Mobile**: Tabs horizontal scroll (snap-scroll), tab min-width 100-120px, tab height 44-48px, content full-width below, image/video responsive, text 14-15px, \"Next\" button full-width or prominent (min 48px height), progress indicator visible (dots or bar), swipe gesture to change tabs optional, clear active tab styling, reduced transition animations",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "icon-grid-with-expandable-details": {
                 "order": 6,
                 "title": "Icon Grid with Expandable Details",
                 "prompt": "- **구조**: Grid of icon cards, click to expand full details\n- **그리드**: 3-4 column grid of compact icon + title cards\n- **아이콘**: Large icon (48-64px) centered above step title\n- **확장**: Click card → expands to show full description, image, etc.\n- **상태**: One expanded at a time, others collapse\n- **레이아웃**: Grid collapses to accommodate expanded card\n- **Mobile**: 2-column grid or single-column, icon 40-48px, title 15-17px, card min-height 140-160px (compact state), tap to expand full-width, expanded padding 24-28px, expanded description 14-15px, smooth expansion animation (300ms), close button visible on expanded card (X icon 24px), card-to-card gap 12-16px, maintain grid structure when expanded or show as overlay/modal",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "comparison-before-after-slider": {
                 "order": 7,
                 "title": "Comparison Before/After Slider",
                 "prompt": "- **구조**: Before/After image comparison slider showing transformation\n- **슬라이더**: Draggable divider between before/after images\n- **이미지**: Same scene in before (left) and after (right) state\n- **컨트롤**: Slider handle in center, drag left/right to reveal\n- **라벨**: \"Before\" and \"After\" labels on respective sides\n- **단계**: Multiple before/after comparisons for different steps\n- **Mobile**: Slider full-width, handle 48-56px (large touch target), touch drag optimized, images maintain aspect ratio, before/after labels 14-16px, slider track 4-6px height, handle has clear visual affordance (arrows or icon), initial position 50%, smooth drag interaction, labels positioned clearly (top corners or overlaid), multiple comparisons stacked vertically with spacing 24-32px",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "interactive-demo-simulator": {
                 "order": 8,
                 "title": "Interactive Demo/Simulator",
                 "prompt": "- **구조**: Live interactive demo showing process in action\n- **인터랙션**: User can click through steps, input data, see results\n- **피드백**: Real-time visual feedback as user progresses\n- **가이드**: Tooltips or highlights guiding user through process\n- **예시**: Form builder, calculator, configuration tool\n- **재설정**: \"Start over\" button to reset demo\n- **Mobile**: Simplified interactions (fewer fields/options), full-width interactive area, larger touch targets (min 48px), input fields 48px height, tooltips adapted to mobile (bottom sheet or inline), clear instruction text 14-15px, progress saved if multi-step, \"Start over\" button prominent, keyboard-friendly inputs (correct input types), reduced visual complexity, haptic feedback for interactions, avoid hover-dependent features",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "checklist-style-step-progression": {
                 "order": 9,
                 "title": "Checklist-Style Step Progression",
                 "prompt": "- **구조**: Vertical checklist of steps with completion states\n- **체크박스**: Large checkboxes (24-32px) showing step completion\n- **상태**: Completed (checked), current (in progress), upcoming (unchecked)\n- **컨텐츠**: Step title + brief description + optional \"Learn more\" link\n- **진행**: Visual progression as user scrolls or interacts\n- **애니메이션**: Check animation when step revealed or completed\n- **Mobile**: Checkbox 24-28px, step title 16-18px bold, description 14-15px, padding-left for content (40-50px from checkbox), vertical spacing 20-24px between steps, checkbox aligned top-left, current step highlighted (background or border), scroll-triggered check animation (IntersectionObserver), \"Learn more\" links 14px with min 44px touch target, clear visual hierarchy, connecting line between checkboxes optional",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             },
             "screenshot-showcase-with-annotations": {
                 "order": 10,
                 "title": "Screenshot Showcase with Annotations",
                 "prompt": "- **구조**: Large product screenshots with numbered annotation callouts\n- **스크린샷**: High-quality UI screenshots showing each step\n- **어노테이션**: Numbered circles or markers on screenshot highlighting areas\n- **설명**: Numbered list beside/below matching screenshot annotations\n- **레이아웃**: Screenshot left, annotations right, or stacked\n- **줌**: Optional click-to-zoom for detail viewing\n- **Mobile**: Screenshot full-width (scrollable if needed), annotations as overlay or below screenshot, numbered markers 24-32px, annotation list stacked below screenshot, list text 14-15px, marker numbers match list numbers, tap marker to highlight corresponding description, screenshot aspect ratio maintained, zoom disabled or tap-to-fullscreen modal, clear marker visibility (high contrast), padding 16-20px, spacing between screenshot and list 24-28px",
-                "sourcePath": "docs/how_it_work-section.md"
+                "sourcePath": "docs/sections/product/how_it_work-section.md"
             }
         }
     },
@@ -549,61 +549,61 @@
                 "order": 1,
                 "title": "Horizontal Navigation Bar with Logo Left, Links Right",
                 "prompt": "- **구조**: Flexbox layout with space-between alignment, fixed height (64-80px)\n- **좌측**: Brand logo (max-height 32-40px), clickable link to homepage\n- **중앙/우측**: Horizontal navigation links with 16-24px spacing, 14-16px font size\n- **CTA 버튼**: Primary button (distinct color, padding 12px 24px) at far right\n- **상태**: Sticky/fixed position on scroll, background opacity or blur effect\n- **반응형**: Desktop full → Mobile hamburger menu icon (hidden links)\n- **Mobile**: Hamburger icon (24x24px) top-right, logo left (max-height 28px), height reduced to 56-64px, full-width touch targets (min 44px)",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "centered-logo-navbar-with-split-navigation": {
                 "order": 2,
                 "title": "Centered Logo Navbar with Split Navigation",
                 "prompt": "- **구조**: Three-section layout - left nav links, center logo, right nav links\n- **로고 배치**: Absolute center positioning with flexbox or grid\n- **링크 분배**: Even distribution of links on both sides (2-3 links each)\n- **시각적 균형**: Symmetric layout, logo as focal point\n- **높이**: Taller navbar (80-100px) for prominent logo display\n- **반응형**: Mobile collapses to standard hamburger layout\n- **Mobile**: Logo moves to left, hamburger right, centered layout impossible on small screens, height 56px",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "mega-menu-dropdown-navigation": {
                 "order": 3,
                 "title": "Mega Menu Dropdown Navigation",
                 "prompt": "- **구조**: Standard horizontal navbar with dropdown mega menu on hover/click\n- **드롭다운**: Full-width or wide dropdown panel (800-1200px) with multi-column layout\n- **메가 메뉴 구성**: 3-4 columns with category headers, list of sub-links, optional featured content/images\n- **인터랙션**: Hover trigger with delay (200ms), click for mobile, smooth fade-in animation\n- **오버레이**: Optional dark overlay on background content when menu open\n- **깊이**: Z-index layering, box-shadow for depth perception\n- **Mobile**: Full-screen overlay menu, single-column vertical layout, accordion sub-menus, swipe-to-close gesture, 100vh height",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "sidebar-navigation-hamburger-menu": {
                 "order": 4,
                 "title": "Sidebar Navigation (Hamburger Menu)",
                 "prompt": "- **구조**: Mobile-first approach, hamburger icon (24-32px) triggers slide-in sidebar\n- **사이드바**: Full-height overlay panel (280-320px width) sliding from left or right\n- **컨텐츠**: Vertical stack of navigation links, large touch targets (48-56px height)\n- **애니메이션**: Transform translateX with backdrop blur/fade, 300ms transition\n- **닫기**: X icon in corner, click outside to close, ESC key support\n- **스크롤**: Scrollable content if links exceed viewport height\n- **Mobile**: Optimized for touch, 80-90% viewport width, swipe gesture to close, safe-area-inset padding for notched devices",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "transparent-navbar-with-scroll-triggered-background": {
                 "order": 5,
                 "title": "Transparent Navbar with Scroll-Triggered Background",
                 "prompt": "- **구조**: Initially transparent overlay on hero section, solid background on scroll\n- **전환**: IntersectionObserver or scroll event triggers background-color change\n- **텍스트 색상**: White text on transparent state, dark text after scroll (smooth transition)\n- **애니메이션**: Background-color and color transition (300ms ease)\n- **그림자**: Box-shadow appears on scroll for depth\n- **높이**: Optional height reduction on scroll (80px → 64px)\n- **Mobile**: Height 56px always, faster scroll threshold (50px instead of 100px), hamburger menu maintains color consistency",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "two-tier-navigation-top-bar-main-nav": {
                 "order": 6,
                 "title": "Two-Tier Navigation (Top Bar + Main Nav)",
                 "prompt": "- **구조**: Two stacked horizontal bars - utility bar (top, 32-40px) + main nav (bottom, 64-80px)\n- **상단 바**: Small announcements, language selector, social icons, contact info\n- **하단 바**: Primary navigation with logo and main links\n- **스크롤 동작**: Top bar hides on scroll, main nav becomes sticky\n- **시각적 구분**: Different background colors or border separation\n- **반응형**: Top bar collapses first, main nav converts to hamburger\n- **Mobile**: Top bar hidden or shows only critical info (phone/language), main nav 56px height, single-tier approach preferred",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "inline-navigation-with-underline-indicators": {
                 "order": 7,
                 "title": "Inline Navigation with Underline Indicators",
                 "prompt": "- **구조**: Horizontal links with active state underline indicator\n- **활성 상태**: Animated underline (2-3px thick) beneath current page link\n- **호버 효과**: Underline expands from center on hover (transform scaleX animation)\n- **전환**: Smooth indicator movement when switching pages (position transition)\n- **타이포그래피**: Medium font-weight (500-600), letter-spacing for readability\n- **간격**: Generous padding (16-20px horizontal) for clear hit areas\n- **Mobile**: Converts to hamburger menu, underline indicators in vertical menu, active page highlighted with background color or left border",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "split-navigation-with-search-bar": {
                 "order": 8,
                 "title": "Split Navigation with Search Bar",
                 "prompt": "- **구조**: Logo left, search input center, utility icons right\n- **검색 바**: Prominent search input (300-400px width) with icon, rounded corners\n- **우측 아이콘**: User profile, cart, notifications (icon-only, 24px size)\n- **인터랙션**: Search expands on focus, autocomplete dropdown appears below\n- **반응형**: Desktop full-width search → Mobile icon that expands overlay search\n- **시각적**: Search as hero element, minimal link clutter\n- **Mobile**: Logo left (compressed), search icon, utility icons right (max 3 icons), tap search for full-screen search overlay with back button",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "navbar-with-integrated-breadcrumb": {
                 "order": 9,
                 "title": "Navbar with Integrated Breadcrumb",
                 "prompt": "- **구조**: Standard navbar with breadcrumb trail below main navigation\n- **브레드크럼**: Horizontal trail with chevron separators, small text (12-14px)\n- **레이아웃**: Breadcrumb appears below logo/links or in separate row\n- **조건부 표시**: Only shows on sub-pages, hidden on homepage\n- **링크**: Each breadcrumb level clickable, current page non-interactive\n- **반응형**: Truncate long breadcrumbs with ellipsis on mobile\n- **Mobile**: Breadcrumb below navbar (separate row, 32-40px height), show only last 2 levels with \"...\" for previous, horizontal scroll if needed",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             },
             "floating-action-button-fab-navigation": {
                 "order": 10,
                 "title": "Floating Action Button (FAB) Navigation",
                 "prompt": "- **구조**: Fixed position circular button (56-64px diameter) in bottom-right corner\n- **트리거**: Click/tap opens radial menu or vertical list of nav options\n- **애니메이션**: Expand animation with staggered item appearance\n- **컨텐츠**: 4-6 key actions/links with icons and optional labels\n- **백드롭**: Semi-transparent overlay when menu open\n- **용도**: Secondary navigation, quick actions, mobile-optimized\n- **Mobile**: Perfectly suited for mobile, 56px diameter, 16px margin from edges, haptic feedback on tap, avoid conflict with browser UI elements",
-                "sourcePath": "docs/navbar-section.md"
+                "sourcePath": "docs/sections/navigation/navbar-section.md"
             }
         }
     },
@@ -614,54 +614,43 @@
                 "order": 1,
                 "title": "Three-Tier Pricing Table (Classic)",
                 "prompt": "- **구조**: 3-column layout with Basic, Professional, Enterprise tiers\n- **카드 구성**: Plan name, price (large), billing period, feature list, CTA button\n- **가격 표시**: Large number (48-64px) + currency symbol + /month or /year\n- **특징 리스트**: Checkmarks for included features, X or dash for excluded\n- **강조**: Middle tier elevated or highlighted (border, shadow, \"Popular\" badge)\n- **정렬**: Center-aligned pricing cards, equal width\n- **Mobile**: Single-column stack or horizontal scroll (snap-scroll), card width 85-90vw for scroll, price 36-48px, plan name 22-26px, feature text 14-15px, button full-width (min 48px height), popular badge 12-14px, gap between cards 16-20px (stack) or visible peek (scroll), checkmark 18-20px, padding per card 24-32px, billing toggle above cards (if present)",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "toggle-pricing-monthly-annual-switch": {
                 "order": 2,
                 "title": "Toggle Pricing (Monthly/Annual Switch)",
                 "prompt": "- **구조**: Pricing table with toggle switch for billing frequency\n- **토글**: Prominent switch above pricing cards (Monthly ← → Annual)\n- **할인 표시**: \"Save 20%\" badge or strikethrough original price for annual\n- **전환 효과**: Smooth price number transition (count-up/down animation)\n- **레이아웃**: Toggle centered above 2-4 pricing cards\n- **시각적**: Active billing period highlighted, inactive greyed out\n- **Mobile**: Toggle full-width or centered (width 200-240px), switch height 36-40px, toggle labels 15-16px, discount badge below toggle (prominent, 13-14px), price transition maintained (smooth animation), cards stacked below toggle, clear visual feedback on toggle switch, increased touch target for toggle (min 44px)",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "comparison-table-with-feature-matrix": {
                 "order": 3,
                 "title": "Comparison Table with Feature Matrix",
                 "prompt": "- **구조**: Detailed table with features as rows, plans as columns\n- **헤더**: Plan names and prices in top row (sticky on scroll)\n- **기능 행**: Feature name in left column, checkmarks/values in plan columns\n- **카테고리**: Grouped features with category headers (bold, background color)\n- **스크롤**: Horizontal scroll on mobile, vertical scroll on desktop if many features\n- **CTA**: \"Select Plan\" button in each column header\n- **Mobile**: Horizontal scroll (lock feature names column), plan columns min-width 140-160px, sticky left column (feature names), checkmark 16-18px, text 13-14px, header sticky top, CTA buttons full-width within column, category headers bold 14-15px, padding 12-16px per cell, zebra striping for row readability, simplified view option (show only differences toggle)",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "card-based-pricing-with-custom-options": {
                 "order": 4,
                 "title": "Card-Based Pricing with Custom Options",
                 "prompt": "- **구조**: Pricing cards with configurable options (sliders, dropdowns)\n- **사용자 정의**: User selects # of seats, storage, features → price updates\n- **계산기**: Interactive calculator component within pricing card\n- **실시간 가격**: Price updates immediately as user adjusts options\n- **레이아웃**: Single large card or side-by-side (options left, summary right)\n- **CTA**: \"Get Custom Quote\" or \"Start Trial\" with selected options\n- **Mobile**: Single-column stack (options above, price summary below), slider full-width, dropdown full-width with 48px height, price display prominent (32-40px), options section padding 20-24px, summary section with background color separation, CTA button full-width (min 48px), option labels 15-16px, real-time calculation maintained, helper text 13-14px below options",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "minimal-pricing-with-single-featured-plan": {
                 "order": 5,
                 "title": "Minimal Pricing with Single Featured Plan",
                 "prompt": "- **구조**: One prominent pricing card (recommended plan) centered\n- **컨텐츠**: Large price, key features (4-6), prominent CTA\n- **보조 옵션**: \"View all plans\" link below for alternatives\n- **디자인**: Clean, focused, removes decision paralysis\n- **카드**: Max-width 500px, elevated with shadow, generous padding\n- **용도**: Freemium model or clear recommended tier\n- **Mobile**: Card full-width with 16-20px margin, price 40-56px, feature list 15-16px with generous spacing (16-20px vertical), CTA button full-width (min 52px height), \"View all plans\" link 15-16px (increased tap target), padding 32-40px, reduced visual complexity, icon/checkmarks 22-24px, clear hierarchy maintained",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "pricing-with-faq-integration": {
                 "order": 6,
                 "title": "Pricing with FAQ Integration",
                 "prompt": "- **구조**: Pricing cards above, accordion FAQ below in same section\n- **레이아웃**: Standard pricing table → transition → FAQ section\n- **FAQ**: 4-6 common pricing questions (billing, refunds, limits)\n- **시각적 연결**: Same background or contained within pricing section\n- **목적**: Address objections immediately after seeing prices\n- **간격**: 60-80px spacing between pricing and FAQ\n- **Mobile**: Pricing cards stacked first (1-col), FAQ accordion below with clear separation, FAQ items min-height 52px (touch target), FAQ text 14-15px, pricing section padding-bottom 40px, FAQ section padding-top 40px, background color shift for visual separation, accordion expansion smooth (300ms), question bold 15-16px, answer regular 14-15px with line-height 1.6",
-                "sourcePath": "docs/pricing-section.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             },
             "enterprise-contact-sales-cta": {
                 "order": 7,
                 "title": "Enterprise/Contact Sales CTA",
                 "prompt": "- **구조**: Standard tiers + separate \"Enterprise\" card with contact form\n- **엔터프라이즈 카드**: No price shown, \"Contact Sales\" CTA, custom features list\n- **차별화**: Different visual treatment (darker, gradient, or bordered)\n- **폼**: Inline short form (name, email, company) or modal trigger\n- **레이아웃**: Enterprise card same height as pricing cards or taller\n- **컨텐츠**: \"Custom pricing\", \"Dedicated support\", \"SLA\" highlights\n- **Mobile**: Enterprise card in stack (typical",
-                "sourcePath": "docs/pricing-section.md"
-            }
-        }
-    },
-    "prompt-sync-playbook": {
-        "title": "프롬프트 동기화 플레이북",
-        "patterns": {
-            "": {
-                "order": 4,
-                "title": "동기화가 엇갈렸다고 느껴질 때",
-                "prompt": "1. `npm run sync-prompts`를 다시 실행합니다. (가장 흔한 누락 원인)\n2. `app/lib/pattern-prompts.json`에서 관련 섹션과 패턴이 존재하는지 확인합니다.\n3. `home.tsx`에서 `promptId`가 올바른지, 또는 `null`로 되어 있지 않은지 검토합니다.\n4. 여전히 문제라면 `scripts/extract-prompts.mjs`를 참고해 문서의 헤더 구조가 규칙(`## 번호. 제목`)을 따르는지 점검합니다.\n\n\n이 플레이북을 기억하기 어렵다면 `README.md`의 “Prompt Preview & Docs Sync” 절에서 이 파일 경로를 다시 확인한 뒤, 상황에 맞는 섹션으로 이동해 주세요.",
-                "sourcePath": "docs/prompt-sync-playbook.md"
+                "sourcePath": "docs/sections/conversion/pricing-section.md"
             }
         }
     },
@@ -672,61 +661,61 @@
                 "order": 1,
                 "title": "Timeline Roadmap with Quarters",
                 "prompt": "- **구조**: Horizontal or vertical timeline with quarterly milestones\n- **타임라인**: Line with Q1, Q2, Q3, Q4 markers\n- **항목**: Feature name + description + status (Shipped, In Progress, Planned)\n- **상태 표시**: Color-coded badges or icons per status\n- **레이아웃**: Timeline on left/top, features branching off\n- **간격**: Clear spacing between quarters (60-80px)\n- **Mobile**: Vertical timeline (not horizontal), quarter markers on left (thin line 2-4px), features on right, status badge 12-13px, feature name 15-17px, description 13-14px, icon 20-24px, vertical spacing 32-40px per feature, color-coded status (green=shipped, blue=progress, grey=planned), quarter labels 16-18px bold, padding 20-24px, clear visual progression",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "card-based-recent-updates": {
                 "order": 2,
                 "title": "Card-Based Recent Updates",
                 "prompt": "- **구조**: Grid of cards showing latest feature releases\n- **카드**: Feature name + \"New\" badge + description + screenshot + date\n- **레이아웃**: 2-3 column grid for recent updates (last 30-60 days)\n- **배지**: \"New\", \"Updated\", \"Beta\" labels with distinct colors\n- **이미지**: Small screenshot or icon representing feature\n- **CTA**: \"Learn more\" or \"Try it now\" link per card\n- **Mobile**: Single-column stack, card full-width, \"New\" badge 12-14px (top-right), feature name 18-20px, date 12-13px, description 14-15px, screenshot/icon full-width or 60% width, \"Learn more\" link 14-15px, card padding 20-24px, gap 16-20px, released date relative (\"2 days ago\"), border or shadow per card",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "tabbed-view-shipped-in-progress-planned": {
                 "order": 3,
                 "title": "Tabbed View (Shipped / In Progress / Planned)",
                 "prompt": "- **구조**: Tabs for different development stages\n- **탭**: \"Recently Shipped\", \"In Development\", \"Coming Soon\"\n- **컨텐츠**: List of features under selected tab\n- **항목**: Feature title + brief description + estimated date (for future)\n- **진행**: Optional progress bar for in-development features\n- **정렬**: Most recent/important first\n- **Mobile**: Tabs horizontal scroll (snap-scroll), tab min-width 140-160px, tab height 44-48px, feature list below tabs, feature item min-height 80px, title 16-18px bold, description 14-15px, date/progress 13-14px, padding per item 16-20px, gap between items 12-16px, swipe between tabs optional, clear active tab, empty state if no items (\"Nothing in development\")",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "changelog-style-list": {
                 "order": 4,
                 "title": "Changelog-Style List",
                 "prompt": "- **구조**: Reverse chronological list of all updates\n- **항목**: Date + version number + feature title + description\n- **그룹화**: Grouped by month or version\n- **타입**: Feature, improvement, bug fix (with icons)\n- **레이아웃**: Single column, left-aligned dates\n- **검색**: Optional search/filter by type or keyword\n- **Mobile**: Date 14-15px (sticky or inline), version 13-14px, feature title 15-17px bold, description 14-15px with line-height 1.6, type icon 20-24px (color-coded), padding per entry 16-20px, gap between entries 12px, month headers 16-18px bold, border-bottom separation, search bar full-width 48px if present, filter chips below search, scrollable list, \"Load more\" pagination",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "interactive-voting-request-board": {
                 "order": 5,
                 "title": "Interactive Voting/Request Board",
                 "prompt": "- **구조**: Feature request board where users can vote\n- **항목**: Feature title + description + vote count + status\n- **투표**: Upvote button with counter\n- **상태**: Planned, Under Review, In Progress, Completed\n- **정렬**: Sort by votes, recent, or status\n- **제출**: \"Submit idea\" button to add requests\n- **Mobile**: Single-column list, feature card full-width, title 16-18px, description 14-15px (truncated with \"Read more\"), vote button prominent (icon + number, min 44px), status badge 12-13px, card padding 20-24px, gap 12-16px, sort dropdown full-width, \"Submit idea\" floating button (bottom-right, 56px), upvote haptic feedback, login required for voting (clear CTA), vote count 16-18px bold",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "visual-roadmap-kanban-style": {
                 "order": 6,
                 "title": "Visual Roadmap (Kanban Style)",
                 "prompt": "- **구조**: Kanban board with columns for stages\n- **컬럼**: Planned → In Progress → Testing → Shipped\n- **카드**: Feature cards that can be dragged (desktop) or static (mobile)\n- **카드 내용**: Feature name + priority badge + assignee avatar (if public)\n- **시각적**: Color-coded by priority or feature type\n- **인터랙션**: Click card for detailed view\n- **Mobile**: Horizontal scroll with snap-scroll (columns side-by-side), column min-width 280-300px, column header 16-18px bold, card min-width 260px, card title 15-16px, priority badge 11-12px, cards stack vertically within column, tap card for details modal, scroll between columns (multiple columns visible), simplified card content (no avatars), padding 16-20px, gap 12px between cards",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "video-announcement-style": {
                 "order": 7,
                 "title": "Video Announcement Style",
                 "prompt": "- **구조**: Video showcasing new features with text summary\n- **비디오**: Product demo video (1-3 minutes) showing new features\n- **컨텐츠**: Video above, bullet list of features below\n- **불릿**: Feature name + one-line description + \"New\" badge\n- **CTA**: \"Watch full demo\" or \"Try new features\" button\n- **섹션**: Can include multiple videos for major releases\n- **Mobile**: Video full-width 16:9, native controls, poster image high-quality, play button 56-64px, bullet list stacked below, bullet item padding 12-16px, feature name 15-17px, description 13-14px, \"New\" badge 11-12px, CTA button full-width 48px, video loads on interaction, captions available, padding 20-24px, gap between video and list 24-28px",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "progress-dashboard-with-metrics": {
                 "order": 8,
                 "title": "Progress Dashboard with Metrics",
                 "prompt": "- **구조**: Dashboard showing development progress metrics\n- **메트릭**: Features shipped this month/quarter, in progress, planned\n- **시각화**: Progress bars, pie charts, or number counters\n- **비교**: Month-over-month or quarter-over-quarter comparison\n- **하이라이트**: \"X features shipped this week\" callout\n- **필터**: Filter by product area or feature type\n- **Mobile**: Single-column stack of metric cards, metric number 32-40px, label 13-15px, progress bar full-width, chart simplified (fewer data points), comparison text 12-13px, card padding 20-24px, gap 16-20px, highlight callout prominent (background color), filter dropdown full-width, visual icons per metric 32-40px, maintain data visualization readability",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "beta-early-access-signup": {
                 "order": 9,
                 "title": "Beta/Early Access Signup",
                 "prompt": "- **구조**: Roadmap with CTA to join beta for upcoming features\n- **컨텐츠**: Upcoming feature list with \"Join beta\" buttons\n- **항목**: Feature preview + description + expected release + beta status\n- **CTA**: \"Request early access\" or \"Join waitlist\" per feature\n- **폼**: Inline email signup or modal form\n- **피드백**: \"You're on the waitlist\" confirmation\n- **Mobile**: Feature card full-width, title 18-20px, description 14-15px, beta badge 12-13px, release date 13-14px, \"Join beta\" button full-width 48px height, form inline (email input + submit), input 48px height, success message 15-16px, card padding 24-28px, gap 20-24px, clear visual for beta features (distinct color/border), email validation, keyboard-friendly input",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             },
             "integrated-release-notes": {
                 "order": 10,
                 "title": "Integrated Release Notes",
                 "prompt": "- **구조**: Expandable release notes embedded in roadmap\n- **레이아웃**: Accordion-style with version numbers as headers\n- **항목**: Version → expand to show full release notes\n- **내용**: Features, improvements, bug fixes, breaking changes\n- **링크**: Links to documentation, blog post, or demo\n- **날짜**: Release date and time clearly displayed\n- **Mobile**: Accordion header min-height 52px, version number 16-18px bold, date 13-14px, expand icon 20-24px, content padding 16-20px when expanded, feature list 14-15px, type icons 18-20px (feature/bug/improvement), links 14-15px with arrow, smooth expansion 300ms, one open at a time recommended, border separation, external link icon for docs/blog, truncate long content with \"Read full notes\"",
-                "sourcePath": "docs/roadmap-section.md"
+                "sourcePath": "docs/sections/product/roadmap-section.md"
             }
         }
     },
@@ -737,61 +726,61 @@
                 "order": 1,
                 "title": "Logo Wall Grid with Grayscale Hover Effect",
                 "prompt": "- **구조**: CSS Grid 4-6 column layout, equal-width cells with consistent spacing (40-60px gap)\n- **로고 처리**: Grayscale filter (100%) on default state, full color on hover with smooth transition (300ms)\n- **정렬**: Center-aligned logos within each cell, max-width constraint for size consistency\n- **반응형**: Desktop 6-col → Tablet 4-col → Mobile 3-col\n- **여백**: Section padding 60-80px vertical, contained max-width 1200px\n- **타이포그래피**: Optional overline \"Trusted by\" with centered alignment above grid",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "testimonial-carousel-with-avatar-cards": {
                 "order": 2,
                 "title": "Testimonial Carousel with Avatar Cards",
                 "prompt": "- **구조**: Horizontal slider with navigation controls, single testimonial per view\n- **카드 구성**: Quote text (18-22px) + Customer avatar (circular, 64-80px) + Name + Role/Company\n- **레이아웃**: Center-aligned card with max-width 800px, generous padding (48-64px)\n- **네비게이션**: Prev/Next arrows + dot pagination indicators below content\n- **인터랙션**: Swipe gesture support, auto-play optional (5-7s interval), pause on hover\n- **디자인**: Quotation mark icon, subtle shadow or border treatment",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "stats-bar-with-animated-counter-numbers": {
                 "order": 3,
                 "title": "Stats Bar with Animated Counter Numbers",
                 "prompt": "- **구조**: Horizontal flexbox layout with 3-4 stat modules, equal distribution\n- **스탯 모듈**: Large number (48-72px bold) + descriptive label (14-16px) + optional icon\n- **애니메이션**: Count-up animation triggered by IntersectionObserver, easing function for smooth increment\n- **구분선**: Vertical dividers between modules (1px, subtle color)\n- **반응형**: Desktop horizontal → Mobile vertical stack\n- **시각적 강조**: Color accent on numbers, icon/illustration per metric",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "masonry-grid-testimonial-wall": {
                 "order": 4,
                 "title": "Masonry Grid Testimonial Wall",
                 "prompt": "- **구조**: Masonry layout (CSS columns or JS library) with variable height cards, 3-4 columns\n- **카드**: Compact testimonial card with quote + avatar + name + rating stars\n- **카드 크기**: Auto-height based on content length, consistent width within column\n- **간격**: 16-24px gap between cards, staggered visual rhythm\n- **반응형**: Desktop 3-col → Tablet 2-col → Mobile 1-col\n- **인터랙션**: Hover state with subtle scale or shadow increase",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "featured-testimonial-with-large-quote-block": {
                 "order": 5,
                 "title": "Featured Testimonial with Large Quote Block",
                 "prompt": "- **구조**: Single prominent testimonial with asymmetric layout, 60:40 split\n- **좌측**: Large pull quote with oversized quotation marks, 32-40px text size\n- **우측**: Customer photo (large format, 400x400px+) with name, title, company logo\n- **타이포그래피**: Serif font for quote text, distinct visual weight\n- **배경**: Subtle background color or gradient to separate from surrounding content\n- **CTA**: Optional \"Read more stories\" link below",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "video-testimonial-grid-with-thumbnail-preview": {
                 "order": 6,
                 "title": "Video Testimonial Grid with Thumbnail Preview",
                 "prompt": "- **구조**: Grid layout 2x2 or 3x2 with video thumbnails, play button overlay\n- **썸네일**: Aspect-ratio 16:9, poster frame with customer face visible\n- **오버레이**: Play button icon (48-64px) centered, hover state with opacity change\n- **모달**: Click to open video in lightbox/modal, native video player controls\n- **하단 정보**: Customer name + company below each thumbnail\n- **반응형**: Desktop 3-col → Tablet 2-col → Mobile 1-col",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "review-aggregation-display-with-star-ratings": {
                 "order": 7,
                 "title": "Review Aggregation Display with Star Ratings",
                 "prompt": "- **구조**: Horizontal layout with multiple review platform scores (G2, Capterra, Trustpilot, etc.)\n- **플랫폼 카드**: Platform logo + star rating (visual stars) + numerical score (4.8/5.0) + review count\n- **레이아웃**: Flexbox horizontal scroll on mobile, fixed grid on desktop\n- **시각적 처리**: Star icons in brand color (filled/half-filled), subtle card borders\n- **신뢰 요소**: \"Verified reviews\" badge, recent update timestamp\n- **간격**: 16-24px gap between platform cards",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "inline-quote-ticker-with-continuous-scroll": {
                 "order": 8,
                 "title": "Inline Quote Ticker with Continuous Scroll",
                 "prompt": "- **구조**: Horizontal auto-scrolling marquee with short testimonial snippets\n- **컨텐츠**: Brief quotes (1-2 sentences) with attribution, repeated in loop\n- **애니메이션**: CSS animation or JS-based continuous horizontal scroll (infinite loop)\n- **속도**: Slow, readable scroll speed (30-50px per second), pause on hover optional\n- **스타일**: Inline format with subtle separators (dots or vertical bars) between quotes\n- **배경**: Contrasting background color to stand out from surrounding sections\n- **접근성**: Duplicate content for screen readers, reduced motion consideration",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "case-study-preview-cards-with-metrics": {
                 "order": 9,
                 "title": "Case Study Preview Cards with Metrics",
                 "prompt": "- **구조**: 2-3 column grid with substantial case study cards\n- **카드 구성**: Company logo + brief description + key metrics (2-3 stats) + \"Read case study\" CTA\n- **메트릭 표시**: Bold numbers with percentage or multiplier indicators (e.g., \"3x revenue growth\")\n- **이미지**: Optional product screenshot or customer photo\n- **호버 효과**: Card lift with shadow increase, CTA color change\n- **반응형**: Desktop 3-col → Tablet 2-col → Mobile 1-col stack",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             },
             "social-media-embed-wall": {
                 "order": 10,
                 "title": "Social Media Embed Wall",
                 "prompt": "- **구조**: Grid or masonry layout with embedded social posts (Twitter, LinkedIn, Instagram)\n- **임베드**: Native platform embeds with iframe or API integration\n- **큐레이션**: Selected positive mentions, customer success posts, user-generated content\n- **레이아웃**: Mixed aspect ratios, organic feel with varied content types\n- **로딩**: Lazy loading for performance, skeleton screens during load\n- **CTA**: \"Follow us\" or \"Join the conversation\" link below grid",
-                "sourcePath": "docs/social_proof-section.md"
+                "sourcePath": "docs/sections/credibility/social_proof-section.md"
             }
         }
     },
@@ -802,61 +791,61 @@
                 "order": 1,
                 "title": "Featured Case Study Cards (Grid Layout)",
                 "prompt": "- **구조**: 2-3 column grid of case study preview cards\n- **카드 구성**: Customer logo + headline + key metric + \"Read story\" CTA\n- **메트릭**: 1-2 impressive numbers (e.g., \"300% ROI\", \"50% time saved\")\n- **이미지**: Customer company building or product screenshot\n- **레이아웃**: Equal-height cards with consistent styling\n- **간격**: 24-32px gap between cards\n- **Mobile**: Single-column stack or 2-column for 2 cases, card full-width (1-col), logo max-width 120px (top-left), headline 18-20px bold, metric 28-32px with colored background, description 14-15px (2-3 lines), \"Read story\" button/link full-width or prominent, card padding 24-28px, gap 20-24px, image aspect-ratio 16:9 if included, tap entire card to navigate",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "full-width-case-study-showcase-hero-style": {
                 "order": 2,
                 "title": "Full-Width Case Study Showcase (Hero Style)",
                 "prompt": "- **구조**: Large hero-style section featuring single case study\n- **레이아웃**: 50:50 split - customer image/video left, content right\n- **컨텐츠**: Company name + industry + problem statement + solution + results\n- **결과**: 3-4 key metrics prominently displayed (large numbers)\n- **인용**: Pull quote from customer with avatar and title\n- **CTA**: \"Read full case study\" primary button\n- **Mobile**: Single-column stack (image/video top, content below), image full-width 16:9, company name 20-24px, industry tag 13-14px, problem/solution text 15-16px, metrics stacked vertically (2x2 grid or single-col), metric numbers 32-40px, metric labels 13-14px, quote text 16-18px italic, avatar 48-56px, CTA button full-width 48-52px, padding 24-32px, clear visual hierarchy",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "tabbed-industry-case-studies": {
                 "order": 3,
                 "title": "Tabbed Industry Case Studies",
                 "prompt": "- **구조**: Tabs for different industries, case study content switches per tab\n- **탭**: Horizontal tabs (Healthcare, Finance, Retail, etc.)\n- **컨텐츠**: Industry-specific case study with relevant metrics\n- **레이아웃**: Tabs above, case study content below\n- **전환**: Smooth fade transition when switching tabs\n- **필터**: Shows most relevant case for selected industry\n- **Mobile**: Tabs horizontal scroll (snap-scroll), tab min-width 120-140px, tab height 44-48px, active tab clear indicator, case study content full-width below, swipe between tabs optional, content updates smoothly, industry icon in tab (optional), padding 16-20px, clear visual separation between tabs and content",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "timeline-based-success-journey": {
                 "order": 4,
                 "title": "Timeline-Based Success Journey",
                 "prompt": "- **구조**: Vertical timeline showing customer journey from start to success\n- **타임라인**: Vertical line with milestone markers\n- **단계**: Onboarding → Implementation → Early Wins → Full Results\n- **컨텐츠**: Each milestone with date, description, and mini-metric\n- **시각적**: Photos or screenshots at each milestone\n- **최종 결과**: Large summary metrics at bottom\n- **Mobile**: Timeline on left (thin, 2-4px), content on right of timeline, milestone markers 20-24px circles, date 13-14px, description 14-15px, mini-metrics 18-20px bold, photos full-width within content area, vertical spacing 40-48px between milestones, final results section prominent (background color), padding 20-24px, clear top-to-bottom flow",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "video-case-study-gallery": {
                 "order": 5,
                 "title": "Video Case Study Gallery",
                 "prompt": "- **구조**: Grid of video testimonial case studies\n- **썸네일**: Video poster with customer face and company logo\n- **오버레이**: Play button + video duration + company name\n- **정보**: Brief headline below thumbnail (e.g., \"How Acme Corp reduced costs by 40%\")\n- **재생**: Click to play inline or open modal with full video\n- **그리드**: 2-3 columns on desktop\n- **Mobile**: Single-column or 2-column grid, thumbnail 16:9 full-width, play button 56-64px (large, centered), duration badge 12-14px (bottom-right), company logo max-width 80px (top-left overlay), headline 15-17px below thumbnail, tap to play fullscreen or modal, video native controls, captions available, gap 16-20px, lazy load videos, poster image high-quality, loading indicator while buffering",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "before-after-comparison-case-study": {
                 "order": 6,
                 "title": "Before/After Comparison Case Study",
                 "prompt": "- **구조**: Side-by-side or slider comparison showing transformation\n- **레이아웃**: Before metrics/state left, After metrics/state right\n- **비교**: Visual comparison (charts, screenshots, or numbers)\n- **슬라이더**: Optional draggable slider to reveal before/after\n- **메트릭**: Key improvements highlighted (arrows showing increase/decrease)\n- **스토리**: Brief narrative explaining transformation\n- **Mobile**: Stacked layout (Before top, After bottom) or maintained slider, slider full-width with large handle (48-56px), Before/After labels 16-18px bold, metrics 24-32px, comparison clear with color coding (red→green), narrative text 14-15px, padding 20-24px, visual arrows/icons showing improvement, slider alternative: toggle switch between views",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "stat-heavy-results-dashboard": {
                 "order": 7,
                 "title": "Stat-Heavy Results Dashboard",
                 "prompt": "- **구조**: Dashboard-style layout emphasizing quantitative results\n- **메트릭**: 6-8 large metrics in grid (revenue growth, time saved, efficiency, etc.)\n- **시각화**: Progress bars, pie charts, or simple number displays\n- **컨텍스트**: Brief customer intro above metrics\n- **컬러**: Color-coded metrics (green for positive, red for reduction)\n- **레이아웃**: 3-column grid of metric cards\n- **Mobile**: 2-column grid or single-column stack, metric cards full-width, number 32-40px bold, label 13-14px, icon/chart 40-48px, card padding 20-24px, gap 16-20px, color coding maintained, customer intro 15-16px above grid, brief context per metric (hover→tap to expand), visual hierarchy clear, background per card for separation",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "interview-style-qanda-format": {
                 "order": 8,
                 "title": "Interview-Style Q&A Format",
                 "prompt": "- **구조**: Q&A format with customer responses\n- **레이아웃**: Customer profile sidebar, Q&A main content\n- **프로필**: Large headshot + name + title + company\n- **질문**: 4-6 key questions (Challenge, Solution, Results, etc.)\n- **답변**: Customer quotes in larger, distinct text\n- **스타일**: Question bold, answer regular with quotation marks\n- **Mobile**: Profile section top (not sidebar), headshot 100-120px centered, name 18-20px, title 14-15px, company logo 80px, Q&A stacked below, question 16-18px bold, answer 15-16px with increased line-height (1.6-1.7), quotation marks visual (icon or styled), padding 24-28px, gap between Q&A 24-28px, background color for answer blocks, clear separation from profile (40px gap)",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "multi-customer-comparison-grid": {
                 "order": 9,
                 "title": "Multi-Customer Comparison Grid",
                 "prompt": "- **구조**: Grid showing multiple customers with key results side-by-side\n- **레이아웃**: 3-4 columns, each column is one customer\n- **컨텐츠**: Logo + industry + 2-3 key metrics + \"View story\" link\n- **목적**: Show breadth of customer success across different use cases\n- **메트릭**: Consistent metric types (ROI, time saved, growth) for comparison\n- **간격**: 20-28px gap between columns\n- **Mobile**: Single-column stack or 2-column, customer card full-width, logo 80-100px, industry tag 12-13px, metrics stacked (not side-by-side), metric number 24-28px, metric label 13-14px, \"View story\" link 14-15px with arrow, card padding 20-24px, gap 16-20px, border or background per card, maintain visual consistency across customers",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             },
             "interactive-case-study-explorer": {
                 "order": 10,
                 "title": "Interactive Case Study Explorer",
                 "prompt": "- **구조**: Filterable/searchable case study library\n- **필터**: Industry, company size, use case, metric type\n- **검색**: Search bar to find specific customer or keyword\n- **결과**: Grid of case study cards that filter in real-time\n- **카운터**: \"Showing X of Y case studies\" feedback\n- **정렬**: Sort by recency, impact, industry\n- **Mobile**: Filters as dropdown or accordion (not horizontal), filter button opens bottom sheet with all options, search bar full-width 48px height, results single-column, card simplified (logo + headline + 1 key metric), counter 13-14px, sort dropdown full-width, smooth filtering (fade transition), \"Reset filters\" button clear, results count prominent, infinite scroll or \"Load more\" button, padding 16-20px",
-                "sourcePath": "docs/story-section.md"
+                "sourcePath": "docs/sections/credibility/story-section.md"
             }
         }
     }

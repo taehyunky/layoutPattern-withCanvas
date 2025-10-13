@@ -5,10 +5,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DOCS_DIR = path.resolve(__dirname, '../docs');
+const DOCS_ROOT = path.resolve(__dirname, '../docs');
+const SECTIONS_ROOT = path.resolve(DOCS_ROOT, 'sections');
 const OUTPUT_PATH = path.resolve(__dirname, '../app/lib/pattern-prompts.json');
 
-const IGNORED_FILES = new Set(['viewport-roadmap.md', 'section-guide.md']);
+const IGNORED_FILENAMES = new Set(['README.md']);
 
 const SECTION_ID_OVERRIDES = {};
 
@@ -24,11 +25,27 @@ function slugify(value) {
     return SLUG_REPLACEMENTS.reduce((result, rule) => result.replace(rule.pattern, rule.value), lower);
 }
 
-async function getMarkdownFiles() {
-    const entries = await fs.readdir(DOCS_DIR);
-    return entries
-        .filter(entry => entry.endsWith('.md') && !IGNORED_FILES.has(entry))
-        .map(entry => path.resolve(DOCS_DIR, entry));
+async function collectMarkdownFiles(directory) {
+    const entries = await fs.readdir(directory, { withFileTypes: true });
+    const files = [];
+
+    for (const entry of entries) {
+        const entryPath = path.join(directory, entry.name);
+
+        if (entry.isDirectory()) {
+            const nestedFiles = await collectMarkdownFiles(entryPath);
+            files.push(...nestedFiles);
+            continue;
+        }
+
+        if (!entry.isFile()) continue;
+        if (!entry.name.endsWith('.md')) continue;
+        if (IGNORED_FILENAMES.has(entry.name)) continue;
+
+        files.push(entryPath);
+    }
+
+    return files;
 }
 
 function normaliseSectionId(filename) {
@@ -91,7 +108,7 @@ function parsePatterns(content) {
 }
 
 async function extractPrompts() {
-    const files = await getMarkdownFiles();
+    const files = await collectMarkdownFiles(SECTIONS_ROOT);
     const result = {};
 
     for (const filePath of files) {
