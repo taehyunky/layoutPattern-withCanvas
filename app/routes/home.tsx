@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
 import {
+    BadgeCheckIcon,
+    BookOpenIcon,
     CreditCardIcon,
     LayersIcon,
     LayoutDashboardIcon,
@@ -39,6 +41,18 @@ import {
     FeatureZigzag,
 } from '~/components/sections/feature';
 import {
+    SocialProofCaseCards,
+    SocialProofFeaturedQuote,
+    SocialProofLogoWall,
+    SocialProofMasonryWall,
+    SocialProofQuoteTicker,
+    SocialProofReviewAggregation,
+    SocialProofSocialEmbed,
+    SocialProofStatsBar,
+    SocialProofTestimonialCarousel,
+    SocialProofVideoGrid,
+} from '~/components/sections/social-proof';
+import {
     PricingClassic,
     PricingComparisonTable,
     PricingCustomCard,
@@ -59,6 +73,18 @@ import {
     HowTimeline,
     HowVideo,
 } from '~/components/sections/how-it-works';
+import {
+    StoryBeforeAfter,
+    StoryComparisonGrid,
+    StoryExplorer,
+    StoryFeaturedGrid,
+    StoryHeroShowcase,
+    StoryIndustryTabs,
+    StoryInterview,
+    StoryJourneyTimeline,
+    StoryResultsDashboard,
+    StoryVideoGallery,
+} from '~/components/sections/story';
 import {
     HeroAsymmetricGrid,
     HeroBentoGrid,
@@ -174,6 +200,8 @@ export default function Home() {
         const featurePromptSectionId = 'feature-section-pattern';
         const pricingPromptSectionId = 'pricing-section';
         const howItWorksPromptSectionId = 'how-it-work-section';
+        const socialProofPromptSectionId = 'social-proof-section';
+        const storyPromptSectionId = 'story-section';
         const heroPromptSectionId = 'hero-section-pattern';
         const navbarPromptSectionId = 'navbar-section';
 
@@ -399,6 +427,132 @@ export default function Home() {
             },
         ].map(pattern => attachPromptDetails(pattern, howItWorksPromptSectionId));
 
+        const socialProofPatterns = [
+            {
+                id: 'social-proof-logo-wall',
+                title: 'Logo Wall Grid',
+                component: SocialProofLogoWall,
+                promptId: 'logo-wall-grid-with-grayscale-hover-effect',
+            },
+            {
+                id: 'social-proof-testimonial-carousel',
+                title: 'Testimonial Carousel',
+                component: SocialProofTestimonialCarousel,
+                promptId: 'testimonial-carousel-with-avatar-cards',
+            },
+            {
+                id: 'social-proof-stats-bar',
+                title: 'Stats Bar',
+                component: SocialProofStatsBar,
+                promptId: 'stats-bar-with-animated-counter-numbers',
+            },
+            {
+                id: 'social-proof-masonry',
+                title: 'Masonry Testimonial Wall',
+                component: SocialProofMasonryWall,
+                promptId: 'masonry-grid-testimonial-wall',
+            },
+            {
+                id: 'social-proof-featured-quote',
+                title: 'Featured Testimonial',
+                component: SocialProofFeaturedQuote,
+                promptId: 'featured-testimonial-with-large-quote-block',
+            },
+            {
+                id: 'social-proof-video-grid',
+                title: 'Video Testimonials',
+                component: SocialProofVideoGrid,
+                promptId: 'video-testimonial-grid-with-thumbnail-preview',
+            },
+            {
+                id: 'social-proof-review-aggregation',
+                title: 'Review Aggregation',
+                component: SocialProofReviewAggregation,
+                promptId: 'review-aggregation-display-with-star-ratings',
+            },
+            {
+                id: 'social-proof-quote-ticker',
+                title: 'Quote Ticker',
+                component: SocialProofQuoteTicker,
+                promptId: 'inline-quote-ticker-with-continuous-scroll',
+            },
+            {
+                id: 'social-proof-case-cards',
+                title: 'Case Study Cards',
+                component: SocialProofCaseCards,
+                promptId: 'case-study-preview-cards-with-metrics',
+            },
+            {
+                id: 'social-proof-social-embed',
+                title: 'Social Embed Wall',
+                component: SocialProofSocialEmbed,
+                promptId: 'social-media-embed-wall',
+            },
+        ].map(pattern => attachPromptDetails(pattern, socialProofPromptSectionId));
+
+        const storyPatterns = [
+            {
+                id: 'story-featured-grid',
+                title: 'Featured Case Grid',
+                component: StoryFeaturedGrid,
+                promptId: 'featured-case-study-cards-grid-layout',
+            },
+            {
+                id: 'story-hero-showcase',
+                title: 'Hero Case Showcase',
+                component: StoryHeroShowcase,
+                promptId: 'full-width-case-study-showcase-hero-style',
+            },
+            {
+                id: 'story-industry-tabs',
+                title: 'Industry Tabs',
+                component: StoryIndustryTabs,
+                promptId: 'tabbed-industry-case-studies',
+            },
+            {
+                id: 'story-journey-timeline',
+                title: 'Success Journey Timeline',
+                component: StoryJourneyTimeline,
+                promptId: 'timeline-based-success-journey',
+            },
+            {
+                id: 'story-video-gallery',
+                title: 'Video Case Gallery',
+                component: StoryVideoGallery,
+                promptId: 'video-case-study-gallery',
+            },
+            {
+                id: 'story-before-after',
+                title: 'Before / After Comparison',
+                component: StoryBeforeAfter,
+                promptId: 'before-after-comparison-case-study',
+            },
+            {
+                id: 'story-results-dashboard',
+                title: 'Results Dashboard',
+                component: StoryResultsDashboard,
+                promptId: 'stat-heavy-results-dashboard',
+            },
+            {
+                id: 'story-interview',
+                title: 'Interview Q&A',
+                component: StoryInterview,
+                promptId: 'interview-style-qanda-format',
+            },
+            {
+                id: 'story-comparison-grid',
+                title: 'Multi-Customer Comparison',
+                component: StoryComparisonGrid,
+                promptId: 'multi-customer-comparison-grid',
+            },
+            {
+                id: 'story-explorer',
+                title: 'Case Study Explorer',
+                component: StoryExplorer,
+                promptId: 'interactive-case-study-explorer',
+            },
+        ].map(pattern => attachPromptDetails(pattern, storyPromptSectionId));
+
         const heroPatterns = [
             { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
             { id: 'hero-media', title: 'Media Spotlight', component: HeroMedia, promptId: null },
@@ -541,6 +695,28 @@ export default function Home() {
                 promptSectionTitle:
                     resolvePromptSectionMeta(howItWorksPromptSectionId)?.title ?? undefined,
                 patterns: howItWorksPatterns,
+            },
+            {
+                id: 'social-proof',
+                label: 'Social proof',
+                icon: BadgeCheckIcon,
+                description: 'Testimonials and social validation modules',
+                patternLabel: 'Social proof pattern',
+                promptSectionId: socialProofPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(socialProofPromptSectionId)?.title ?? undefined,
+                patterns: socialProofPatterns,
+            },
+            {
+                id: 'story',
+                label: 'Case studies',
+                icon: BookOpenIcon,
+                description: 'Narrative success stories and journeys',
+                patternLabel: 'Story pattern',
+                promptSectionId: storyPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(storyPromptSectionId)?.title ?? undefined,
+                patterns: storyPatterns,
             },
             {
                 id: 'hero',

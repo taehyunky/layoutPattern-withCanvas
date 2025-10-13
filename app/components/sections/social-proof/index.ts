@@ -1,1 +1,10 @@
-// Social Proof 섹션 패턴 컴포넌트 export 포인트
+export { SocialProofLogoWall } from './social-proof-logo-wall';
+export { SocialProofTestimonialCarousel } from './social-proof-testimonial-carousel';
+export { SocialProofStatsBar } from './social-proof-stats-bar';
+export { SocialProofMasonryWall } from './social-proof-masonry-wall';
+export { SocialProofFeaturedQuote } from './social-proof-featured-quote';
+export { SocialProofVideoGrid } from './social-proof-video-grid';
+export { SocialProofReviewAggregation } from './social-proof-review-aggregation';
+export { SocialProofQuoteTicker } from './social-proof-quote-ticker';
+export { SocialProofCaseCards } from './social-proof-case-cards';
+export { SocialProofSocialEmbed } from './social-proof-social-embed';
