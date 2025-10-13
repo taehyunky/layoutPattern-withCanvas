@@ -1,8 +1,10 @@
 import { useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
 import {
+    CreditCardIcon,
     LayersIcon,
     LayoutDashboardIcon,
+    ListChecksIcon,
     MegaphoneIcon,
     PanelsTopLeftIcon,
     SparklesIcon,
@@ -36,6 +38,27 @@ import {
     FeatureToggleComparison,
     FeatureZigzag,
 } from '~/components/sections/feature';
+import {
+    PricingClassic,
+    PricingComparisonTable,
+    PricingCustomCard,
+    PricingEnterprise,
+    PricingMinimal,
+    PricingToggle,
+    PricingWithFaq,
+} from '~/components/sections/pricing';
+import {
+    HowAnnotations,
+    HowBeforeAfter,
+    HowChecklist,
+    HowFlowDiagram,
+    HowIconGrid,
+    HowSimulator,
+    HowStepCards,
+    HowTabs,
+    HowTimeline,
+    HowVideo,
+} from '~/components/sections/how-it-works';
 import {
     HeroAsymmetricGrid,
     HeroBentoGrid,
@@ -149,6 +172,8 @@ export default function Home() {
 
         const ctaPromptSectionId = 'cta-section';
         const featurePromptSectionId = 'feature-section-pattern';
+        const pricingPromptSectionId = 'pricing-section';
+        const howItWorksPromptSectionId = 'how-it-work-section';
         const heroPromptSectionId = 'hero-section-pattern';
         const navbarPromptSectionId = 'navbar-section';
 
@@ -265,6 +290,114 @@ export default function Home() {
                 promptId: 'interactive-feature-matrix-with-filtering',
             },
         ].map(pattern => attachPromptDetails(pattern, featurePromptSectionId));
+
+        const pricingPatterns = [
+            {
+                id: 'pricing-classic',
+                title: 'Classic Tiered Table',
+                component: PricingClassic,
+                promptId: 'three-tier-pricing-table-classic',
+            },
+            {
+                id: 'pricing-toggle',
+                title: 'Toggle Billing Switch',
+                component: PricingToggle,
+                promptId: 'toggle-pricing-monthly-annual-switch',
+            },
+            {
+                id: 'pricing-comparison-table',
+                title: 'Feature Comparison Matrix',
+                component: PricingComparisonTable,
+                promptId: 'comparison-table-with-feature-matrix',
+            },
+            {
+                id: 'pricing-custom-card',
+                title: 'Customizable Pricing Card',
+                component: PricingCustomCard,
+                promptId: 'card-based-pricing-with-custom-options',
+            },
+            {
+                id: 'pricing-minimal',
+                title: 'Minimal Featured Plan',
+                component: PricingMinimal,
+                promptId: 'minimal-pricing-with-single-featured-plan',
+            },
+            {
+                id: 'pricing-with-faq',
+                title: 'Pricing Plus FAQ',
+                component: PricingWithFaq,
+                promptId: 'pricing-with-faq-integration',
+            },
+            {
+                id: 'pricing-enterprise',
+                title: 'Enterprise Contact CTA',
+                component: PricingEnterprise,
+                promptId: 'enterprise-contact-sales-cta',
+            },
+        ].map(pattern => attachPromptDetails(pattern, pricingPromptSectionId));
+
+        const howItWorksPatterns = [
+            {
+                id: 'how-step-cards',
+                title: 'Numbered Step Cards',
+                component: HowStepCards,
+                promptId: 'numbered-step-cards-horizontal-layout',
+            },
+            {
+                id: 'how-timeline',
+                title: 'Vertical Timeline',
+                component: HowTimeline,
+                promptId: 'vertical-timeline-with-alternating-content',
+            },
+            {
+                id: 'how-flow-diagram',
+                title: 'Flow Diagram',
+                component: HowFlowDiagram,
+                promptId: 'animated-process-flow-diagram',
+            },
+            {
+                id: 'how-video',
+                title: 'Video Walkthrough',
+                component: HowVideo,
+                promptId: 'video-walkthrough-with-step-markers',
+            },
+            {
+                id: 'how-tabs',
+                title: 'Tabbed Process',
+                component: HowTabs,
+                promptId: 'tab-based-process-explanation',
+            },
+            {
+                id: 'how-icon-grid',
+                title: 'Expandable Icon Grid',
+                component: HowIconGrid,
+                promptId: 'icon-grid-with-expandable-details',
+            },
+            {
+                id: 'how-before-after',
+                title: 'Before / After Slider',
+                component: HowBeforeAfter,
+                promptId: 'comparison-before-after-slider',
+            },
+            {
+                id: 'how-simulator',
+                title: 'Interactive Simulator',
+                component: HowSimulator,
+                promptId: 'interactive-demo-simulator',
+            },
+            {
+                id: 'how-checklist',
+                title: 'Checklist Progression',
+                component: HowChecklist,
+                promptId: 'checklist-style-step-progression',
+            },
+            {
+                id: 'how-annotations',
+                title: 'Annotated Screenshots',
+                component: HowAnnotations,
+                promptId: 'screenshot-showcase-with-annotations',
+            },
+        ].map(pattern => attachPromptDetails(pattern, howItWorksPromptSectionId));
 
         const heroPatterns = [
             { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
@@ -386,6 +519,28 @@ export default function Home() {
                 promptSectionTitle:
                     resolvePromptSectionMeta(featurePromptSectionId)?.title ?? undefined,
                 patterns: featurePatterns,
+            },
+            {
+                id: 'pricing',
+                label: 'Pricing',
+                icon: CreditCardIcon,
+                description: 'Flexible plans with toggles and comparisons',
+                patternLabel: 'Pricing pattern',
+                promptSectionId: pricingPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(pricingPromptSectionId)?.title ?? undefined,
+                patterns: pricingPatterns,
+            },
+            {
+                id: 'how-it-works',
+                label: 'How it works',
+                icon: ListChecksIcon,
+                description: 'Explain process and onboarding journeys',
+                patternLabel: 'Process pattern',
+                promptSectionId: howItWorksPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(howItWorksPromptSectionId)?.title ?? undefined,
+                patterns: howItWorksPatterns,
             },
             {
                 id: 'hero',

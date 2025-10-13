@@ -1,1 +1,10 @@
-// How It Works 섹션 패턴 컴포넌트 export 포인트
+export { HowStepCards } from './how-step-cards';
+export { HowTimeline } from './how-timeline';
+export { HowFlowDiagram } from './how-flow-diagram';
+export { HowVideo } from './how-video';
+export { HowTabs } from './how-tabs';
+export { HowIconGrid } from './how-icon-grid';
+export { HowBeforeAfter } from './how-before-after';
+export { HowSimulator } from './how-simulator';
+export { HowChecklist } from './how-checklist';
+export { HowAnnotations } from './how-annotations';
