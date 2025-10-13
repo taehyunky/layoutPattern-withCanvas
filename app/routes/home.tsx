@@ -3,9 +3,11 @@ import type { ComponentType } from 'react';
 import {
     BadgeCheckIcon,
     BookOpenIcon,
+    CircleUserIcon,
     CreditCardIcon,
     LayersIcon,
     LayoutDashboardIcon,
+    LifeBuoyIcon,
     ListChecksIcon,
     MegaphoneIcon,
     PanelsTopLeftIcon,
@@ -106,6 +108,30 @@ import {
     NavbarUnderlineIndicator,
     NavbarWithBreadcrumb,
 } from '~/components/sections/navbar';
+import {
+    AboutAwardsRecognition,
+    AboutCareerIntegration,
+    AboutCompanyMap,
+    AboutCultureGallery,
+    AboutFounderTimeline,
+    AboutLeadershipShowcase,
+    AboutMissionVisionValues,
+    AboutStatsHighlight,
+    AboutTeamGrid,
+    AboutVideoIntroduction,
+} from '~/components/sections/about';
+import {
+    ContactAppointmentBooking,
+    ContactFaqHybrid,
+    ContactLiveChatWidget,
+    ContactLocationSelector,
+    ContactMinimalEmailPhone,
+    ContactMultiDepartment,
+    ContactSocialMedia,
+    ContactSplitLayout,
+    ContactStandardForm,
+    ContactSupportTicket,
+} from '~/components/sections/contact';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { ScrollArea } from '~/components/ui/scroll-area';
@@ -202,6 +228,8 @@ export default function Home() {
         const howItWorksPromptSectionId = 'how-it-work-section';
         const socialProofPromptSectionId = 'social-proof-section';
         const storyPromptSectionId = 'story-section';
+        const aboutPromptSectionId = 'about-section';
+        const contactPromptSectionId = 'contact-section';
         const heroPromptSectionId = 'hero-section-pattern';
         const navbarPromptSectionId = 'navbar-section';
 
@@ -553,6 +581,132 @@ export default function Home() {
             },
         ].map(pattern => attachPromptDetails(pattern, storyPromptSectionId));
 
+        const aboutPatterns = [
+            {
+                id: 'about-team-grid',
+                title: 'Team Grid Profiles',
+                component: AboutTeamGrid,
+                promptId: 'team-grid-with-headshots-and-bios',
+            },
+            {
+                id: 'about-founder-timeline',
+                title: 'Founder Story Timeline',
+                component: AboutFounderTimeline,
+                promptId: 'founder-story-with-timeline',
+            },
+            {
+                id: 'about-mission-vision-values',
+                title: 'Mission · Vision · Values',
+                component: AboutMissionVisionValues,
+                promptId: 'mission-vision-values-cards',
+            },
+            {
+                id: 'about-stats-highlight',
+                title: 'Company Metrics Highlight',
+                component: AboutStatsHighlight,
+                promptId: 'company-stats-metrics-highlight',
+            },
+            {
+                id: 'about-culture-gallery',
+                title: 'Culture Photo Gallery',
+                component: AboutCultureGallery,
+                promptId: 'office-culture-photo-gallery',
+            },
+            {
+                id: 'about-leadership-showcase',
+                title: 'Leadership Showcase',
+                component: AboutLeadershipShowcase,
+                promptId: 'leadership-showcase-with-expanded-profiles',
+            },
+            {
+                id: 'about-company-map',
+                title: 'Global Office Map',
+                component: AboutCompanyMap,
+                promptId: 'interactive-company-map',
+            },
+            {
+                id: 'about-career-integration',
+                title: 'Careers Integration',
+                component: AboutCareerIntegration,
+                promptId: 'career-join-us-integration',
+            },
+            {
+                id: 'about-awards-recognition',
+                title: 'Awards & Recognition',
+                component: AboutAwardsRecognition,
+                promptId: 'awards-and-recognition-display',
+            },
+            {
+                id: 'about-video-introduction',
+                title: 'Video Introduction',
+                component: AboutVideoIntroduction,
+                promptId: 'video-introduction-behind-the-scenes',
+            },
+        ].map(pattern => attachPromptDetails(pattern, aboutPromptSectionId));
+
+        const contactPatterns = [
+            {
+                id: 'contact-standard-form',
+                title: 'Standard Contact Form',
+                component: ContactStandardForm,
+                promptId: 'standard-contact-form',
+            },
+            {
+                id: 'contact-split-layout',
+                title: 'Split Form + Info',
+                component: ContactSplitLayout,
+                promptId: 'split-layout-form-contact-info',
+            },
+            {
+                id: 'contact-minimal-email-phone',
+                title: 'Minimal Email & Phone',
+                component: ContactMinimalEmailPhone,
+                promptId: 'minimal-email-phone-only',
+            },
+            {
+                id: 'contact-multi-department',
+                title: 'Multi-Department Cards',
+                component: ContactMultiDepartment,
+                promptId: 'multi-department-contact-options',
+            },
+            {
+                id: 'contact-live-chat-widget',
+                title: 'Live Chat Widget',
+                component: ContactLiveChatWidget,
+                promptId: 'live-chat-widget-integration',
+            },
+            {
+                id: 'contact-faq-hybrid',
+                title: 'FAQ + Contact Hybrid',
+                component: ContactFaqHybrid,
+                promptId: 'faq-contact-hybrid',
+            },
+            {
+                id: 'contact-appointment-booking',
+                title: 'Appointment Booking',
+                component: ContactAppointmentBooking,
+                promptId: 'appointment-booking-integration',
+            },
+            {
+                id: 'contact-location-selector',
+                title: 'Location Selector',
+                component: ContactLocationSelector,
+                promptId: 'location-based-contact-multiple-offices',
+            },
+            {
+                id: 'contact-social-media',
+                title: 'Social Media Contact',
+                component: ContactSocialMedia,
+                promptId: 'social-media-primary-contact',
+            },
+            {
+                id: 'contact-support-ticket',
+                title: 'Support Ticket Form',
+                component: ContactSupportTicket,
+                promptId: 'support-ticket-system',
+            },
+        ].map(pattern => attachPromptDetails(pattern, contactPromptSectionId));
+
         const heroPatterns = [
             { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
             { id: 'hero-media', title: 'Media Spotlight', component: HeroMedia, promptId: null },
@@ -717,6 +871,28 @@ export default function Home() {
                 promptSectionTitle:
                     resolvePromptSectionMeta(storyPromptSectionId)?.title ?? undefined,
                 patterns: storyPatterns,
+            },
+            {
+                id: 'about',
+                label: 'About',
+                icon: CircleUserIcon,
+                description: 'Team culture, story, and credibility builders',
+                patternLabel: 'About pattern',
+                promptSectionId: aboutPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(aboutPromptSectionId)?.title ?? undefined,
+                patterns: aboutPatterns,
+            },
+            {
+                id: 'contact',
+                label: 'Contact',
+                icon: LifeBuoyIcon,
+                description: 'Support, sales, and help center entry points',
+                patternLabel: 'Contact pattern',
+                promptSectionId: contactPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(contactPromptSectionId)?.title ?? undefined,
+                patterns: contactPatterns,
             },
             {
                 id: 'hero',

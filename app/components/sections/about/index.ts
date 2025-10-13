@@ -1,1 +1,10 @@
-// About 섹션 패턴 컴포넌트 export 포인트
+export { AboutTeamGrid } from './about-team-grid';
+export { AboutFounderTimeline } from './about-founder-timeline';
+export { AboutMissionVisionValues } from './about-mission-vision-values';
+export { AboutStatsHighlight } from './about-stats-highlight';
+export { AboutCultureGallery } from './about-culture-gallery';
+export { AboutLeadershipShowcase } from './about-leadership-showcase';
+export { AboutCompanyMap } from './about-company-map';
+export { AboutCareerIntegration } from './about-career-integration';
+export { AboutAwardsRecognition } from './about-awards-recognition';
+export { AboutVideoIntroduction } from './about-video-introduction';
