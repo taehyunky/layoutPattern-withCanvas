@@ -1,1 +1,10 @@
-// FAQ 섹션 패턴 컴포넌트 export 포인트
+export { FaqClassicAccordion } from './faq-classic-accordion';
+export { FaqTwoColumnGrid } from './faq-two-column-grid';
+export { FaqCategorizedTabs } from './faq-categorized-tabs';
+export { FaqSearchEnabled } from './faq-search';
+export { FaqWithVideoAnswers } from './faq-video-answers';
+export { FaqMinimalInline } from './faq-minimal-inline';
+export { FaqWithContactCta } from './faq-with-cta';
+export { FaqInteractiveRelated } from './faq-interactive-related';
+export { FaqIconIndicators } from './faq-icon-indicators';
+export { FaqNested } from './faq-nested';

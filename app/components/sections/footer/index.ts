@@ -1,1 +1,10 @@
-// Footer 섹션 패턴 컴포넌트 export 포인트
+export { FooterMultiColumn } from './footer-multi-column';
+export { FooterMinimalCentered } from './footer-minimal-centered';
+export { FooterNewsletter } from './footer-newsletter';
+export { FooterAppDownload } from './footer-app-download';
+export { FooterContactForm } from './footer-contact-form';
+export { FooterSocialFeed } from './footer-social-feed';
+export { FooterAccordion } from './footer-accordion';
+export { FooterStickyBackToTop } from './footer-sticky-backtotop';
+export { FooterLegalDisclaimer } from './footer-legal';
+export { FooterLocations } from './footer-locations';

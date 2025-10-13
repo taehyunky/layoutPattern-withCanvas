@@ -1,1 +1,10 @@
-// Comparison 섹션 패턴 컴포넌트 export 포인트
+export { ComparisonClassicMatrix } from './comparison-classic-matrix';
+export { ComparisonUsVsCompetitor } from './comparison-us-vs-competitor';
+export { ComparisonTabbedCompetitor } from './comparison-tabbed-competitor';
+export { ComparisonInteractiveSlider } from './comparison-interactive-slider';
+export { ComparisonProsCons } from './comparison-pros-cons';
+export { ComparisonCategoryBased } from './comparison-category-based';
+export { ComparisonPricingCalculator } from './comparison-pricing-calculator';
+export { ComparisonExpandableDetailed } from './comparison-expandable-detailed';
+export { ComparisonVisualIcon } from './comparison-visual-icon';
+export { ComparisonScoreRanking } from './comparison-score-ranking';

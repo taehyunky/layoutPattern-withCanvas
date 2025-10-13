@@ -4,13 +4,17 @@ import {
     BadgeCheckIcon,
     BookOpenIcon,
     CircleUserIcon,
+    Columns3Icon,
     CreditCardIcon,
+    GitBranchIcon,
+    HelpCircleIcon,
     LayersIcon,
     LayoutDashboardIcon,
     LifeBuoyIcon,
     ListChecksIcon,
     MegaphoneIcon,
     PanelsTopLeftIcon,
+    SquareStackIcon,
     SparklesIcon,
 } from 'lucide-react';
 
@@ -132,6 +136,54 @@ import {
     ContactStandardForm,
     ContactSupportTicket,
 } from '~/components/sections/contact';
+import {
+    FooterAccordion,
+    FooterAppDownload,
+    FooterContactForm,
+    FooterLegalDisclaimer,
+    FooterLocations,
+    FooterMinimalCentered,
+    FooterMultiColumn,
+    FooterNewsletter,
+    FooterSocialFeed,
+    FooterStickyBackToTop,
+} from '~/components/sections/footer';
+import {
+    ComparisonCategoryBased,
+    ComparisonClassicMatrix,
+    ComparisonExpandableDetailed,
+    ComparisonInteractiveSlider,
+    ComparisonPricingCalculator,
+    ComparisonProsCons,
+    ComparisonScoreRanking,
+    ComparisonTabbedCompetitor,
+    ComparisonUsVsCompetitor,
+    ComparisonVisualIcon,
+} from '~/components/sections/comparison';
+import {
+    RoadmapBetaSignup,
+    RoadmapCardUpdates,
+    RoadmapChangelogList,
+    RoadmapKanban,
+    RoadmapProgressDashboard,
+    RoadmapReleaseNotes,
+    RoadmapTabbedView,
+    RoadmapTimeline,
+    RoadmapVideoAnnouncement,
+    RoadmapVotingBoard,
+} from '~/components/sections/roadmap';
+import {
+    FaqCategorizedTabs,
+    FaqClassicAccordion,
+    FaqIconIndicators,
+    FaqInteractiveRelated,
+    FaqMinimalInline,
+    FaqNested,
+    FaqSearchEnabled,
+    FaqTwoColumnGrid,
+    FaqWithContactCta,
+    FaqWithVideoAnswers,
+} from '~/components/sections/faq';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { ScrollArea } from '~/components/ui/scroll-area';
@@ -228,8 +280,12 @@ export default function Home() {
         const howItWorksPromptSectionId = 'how-it-work-section';
         const socialProofPromptSectionId = 'social-proof-section';
         const storyPromptSectionId = 'story-section';
+        const comparisonPromptSectionId = 'comparison-table';
         const aboutPromptSectionId = 'about-section';
         const contactPromptSectionId = 'contact-section';
+        const faqPromptSectionId = 'faq-secton';
+        const roadmapPromptSectionId = 'roadmap-section';
+        const footerPromptSectionId = 'footer-section';
         const heroPromptSectionId = 'hero-section-pattern';
         const navbarPromptSectionId = 'navbar-section';
 
@@ -391,6 +447,69 @@ export default function Home() {
                 promptId: 'enterprise-contact-sales-cta',
             },
         ].map(pattern => attachPromptDetails(pattern, pricingPromptSectionId));
+
+        const comparisonPatterns = [
+            {
+                id: 'comparison-classic-matrix',
+                title: 'Classic Feature Matrix',
+                component: ComparisonClassicMatrix,
+                promptId: 'classic-feature-comparison-matrix',
+            },
+            {
+                id: 'comparison-us-vs-competitor',
+                title: 'Us vs Competitor',
+                component: ComparisonUsVsCompetitor,
+                promptId: 'us-vs-competitor-comparison',
+            },
+            {
+                id: 'comparison-tabbed-competitor',
+                title: 'Tabbed Competitor Switcher',
+                component: ComparisonTabbedCompetitor,
+                promptId: 'tabbed-competitor-comparison',
+            },
+            {
+                id: 'comparison-interactive-slider',
+                title: 'Interactive Slider',
+                component: ComparisonInteractiveSlider,
+                promptId: 'interactive-slider-comparison',
+            },
+            {
+                id: 'comparison-pros-cons',
+                title: 'Pros and Cons Cards',
+                component: ComparisonProsCons,
+                promptId: 'pros-cons-list-comparison',
+            },
+            {
+                id: 'comparison-category-based',
+                title: 'Category-Based Breakdown',
+                component: ComparisonCategoryBased,
+                promptId: 'category-based-comparison',
+            },
+            {
+                id: 'comparison-pricing-calculator',
+                title: 'Pricing Calculator',
+                component: ComparisonPricingCalculator,
+                promptId: 'pricing-calculator-comparison',
+            },
+            {
+                id: 'comparison-expandable-detailed',
+                title: 'Expandable Detail Table',
+                component: ComparisonExpandableDetailed,
+                promptId: 'expandable-detailed-comparison',
+            },
+            {
+                id: 'comparison-visual-icon',
+                title: 'Visual Icon Summary',
+                component: ComparisonVisualIcon,
+                promptId: 'visual-icon-based-comparison',
+            },
+            {
+                id: 'comparison-score-ranking',
+                title: 'Score-Based Ranking',
+                component: ComparisonScoreRanking,
+                promptId: 'score-based-ranking-comparison',
+            },
+        ].map(pattern => attachPromptDetails(pattern, comparisonPromptSectionId));
 
         const howItWorksPatterns = [
             {
@@ -644,6 +763,69 @@ export default function Home() {
             },
         ].map(pattern => attachPromptDetails(pattern, aboutPromptSectionId));
 
+        const roadmapPatterns = [
+            {
+                id: 'roadmap-timeline',
+                title: 'Timeline with Quarters',
+                component: RoadmapTimeline,
+                promptId: 'timeline-roadmap-with-quarters',
+            },
+            {
+                id: 'roadmap-card-updates',
+                title: 'Card-Based Updates',
+                component: RoadmapCardUpdates,
+                promptId: 'card-based-recent-updates',
+            },
+            {
+                id: 'roadmap-tabbed-view',
+                title: 'Tabbed Stage View',
+                component: RoadmapTabbedView,
+                promptId: 'tabbed-view-shipped-in-progress-planned',
+            },
+            {
+                id: 'roadmap-changelog',
+                title: 'Changelog List',
+                component: RoadmapChangelogList,
+                promptId: 'changelog-style-list',
+            },
+            {
+                id: 'roadmap-voting-board',
+                title: 'Voting Board',
+                component: RoadmapVotingBoard,
+                promptId: 'interactive-voting-request-board',
+            },
+            {
+                id: 'roadmap-kanban',
+                title: 'Kanban Roadmap',
+                component: RoadmapKanban,
+                promptId: 'visual-roadmap-kanban-style',
+            },
+            {
+                id: 'roadmap-video-announcement',
+                title: 'Video Announcement',
+                component: RoadmapVideoAnnouncement,
+                promptId: 'video-announcement-style',
+            },
+            {
+                id: 'roadmap-progress-dashboard',
+                title: 'Progress Dashboard',
+                component: RoadmapProgressDashboard,
+                promptId: 'progress-dashboard-with-metrics',
+            },
+            {
+                id: 'roadmap-beta-signup',
+                title: 'Beta Signup',
+                component: RoadmapBetaSignup,
+                promptId: 'beta-early-access-signup',
+            },
+            {
+                id: 'roadmap-release-notes',
+                title: 'Release Notes',
+                component: RoadmapReleaseNotes,
+                promptId: 'integrated-release-notes',
+            },
+        ].map(pattern => attachPromptDetails(pattern, roadmapPromptSectionId));
+
         const contactPatterns = [
             {
                 id: 'contact-standard-form',
@@ -706,6 +888,132 @@ export default function Home() {
                 promptId: 'support-ticket-system',
             },
         ].map(pattern => attachPromptDetails(pattern, contactPromptSectionId));
+
+        const faqPatterns = [
+            {
+                id: 'faq-classic-accordion',
+                title: 'Classic Accordion',
+                component: FaqClassicAccordion,
+                promptId: 'classic-accordion-faq',
+            },
+            {
+                id: 'faq-two-column-grid',
+                title: 'Two-Column Grid',
+                component: FaqTwoColumnGrid,
+                promptId: 'two-column-faq-grid',
+            },
+            {
+                id: 'faq-categorized-tabs',
+                title: 'Categorized Tabs',
+                component: FaqCategorizedTabs,
+                promptId: 'categorized-faq-with-tab-navigation',
+            },
+            {
+                id: 'faq-search-enabled',
+                title: 'Search-Enabled FAQ',
+                component: FaqSearchEnabled,
+                promptId: 'search-enabled-faq',
+            },
+            {
+                id: 'faq-with-video-answers',
+                title: 'FAQ with Video Answers',
+                component: FaqWithVideoAnswers,
+                promptId: 'faq-with-video-answers',
+            },
+            {
+                id: 'faq-minimal-inline',
+                title: 'Minimal Inline FAQ',
+                component: FaqMinimalInline,
+                promptId: 'minimal-faq-with-inline-answers',
+            },
+            {
+                id: 'faq-with-contact-cta',
+                title: 'FAQ + Contact CTA',
+                component: FaqWithContactCta,
+                promptId: 'faq-with-contact-cta-integration',
+            },
+            {
+                id: 'faq-interactive-related',
+                title: 'Interactive Related FAQ',
+                component: FaqInteractiveRelated,
+                promptId: 'interactive-faq-with-related-questions',
+            },
+            {
+                id: 'faq-icon-indicators',
+                title: 'Icon Indicators FAQ',
+                component: FaqIconIndicators,
+                promptId: 'faq-with-emoji-icon-indicators',
+            },
+            {
+                id: 'faq-nested',
+                title: 'Nested FAQ',
+                component: FaqNested,
+                promptId: 'nested-faq-sub-questions',
+            },
+        ].map(pattern => attachPromptDetails(pattern, faqPromptSectionId));
+
+        const footerPatterns = [
+            {
+                id: 'footer-multi-column',
+                title: 'Multi-Column Footer',
+                component: FooterMultiColumn,
+                promptId: 'multi-column-footer-with-link-categories',
+            },
+            {
+                id: 'footer-minimal-centered',
+                title: 'Minimal Centered Footer',
+                component: FooterMinimalCentered,
+                promptId: 'minimal-footer-with-centered-content',
+            },
+            {
+                id: 'footer-newsletter',
+                title: 'Newsletter Footer',
+                component: FooterNewsletter,
+                promptId: 'newsletter-signup-footer-with-cta',
+            },
+            {
+                id: 'footer-app-download',
+                title: 'App Download Footer',
+                component: FooterAppDownload,
+                promptId: 'app-download-footer-with-store-badges',
+            },
+            {
+                id: 'footer-contact-form',
+                title: 'Footer Contact Form',
+                component: FooterContactForm,
+                promptId: 'footer-with-integrated-contact-form',
+            },
+            {
+                id: 'footer-social-feed',
+                title: 'Footer Social Feed',
+                component: FooterSocialFeed,
+                promptId: 'rich-footer-with-social-feed-integration',
+            },
+            {
+                id: 'footer-accordion',
+                title: 'Accordion Footer',
+                component: FooterAccordion,
+                promptId: 'accordion-style-mobile-first-footer',
+            },
+            {
+                id: 'footer-sticky-backtotop',
+                title: 'Sticky Back-to-Top Footer',
+                component: FooterStickyBackToTop,
+                promptId: 'sticky-footer-with-back-to-top-button',
+            },
+            {
+                id: 'footer-legal',
+                title: 'Legal Disclaimer Footer',
+                component: FooterLegalDisclaimer,
+                promptId: 'footer-with-legal-disclaimer-section',
+            },
+            {
+                id: 'footer-locations',
+                title: 'Footer with Locations',
+                component: FooterLocations,
+                promptId: 'footer-with-office-locations-map',
+            },
+        ].map(pattern => attachPromptDetails(pattern, footerPromptSectionId));
 
         const heroPatterns = [
             { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
@@ -840,6 +1148,17 @@ export default function Home() {
                 patterns: pricingPatterns,
             },
             {
+                id: 'comparison',
+                label: 'Comparison',
+                icon: Columns3Icon,
+                description: 'Plan comparisons and competitive positioning',
+                patternLabel: 'Comparison pattern',
+                promptSectionId: comparisonPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(comparisonPromptSectionId)?.title ?? undefined,
+                patterns: comparisonPatterns,
+            },
+            {
                 id: 'how-it-works',
                 label: 'How it works',
                 icon: ListChecksIcon,
@@ -884,6 +1203,17 @@ export default function Home() {
                 patterns: aboutPatterns,
             },
             {
+                id: 'roadmap',
+                label: 'Roadmap',
+                icon: GitBranchIcon,
+                description: 'Launch visibility, timelines, and beta access',
+                patternLabel: 'Roadmap pattern',
+                promptSectionId: roadmapPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(roadmapPromptSectionId)?.title ?? undefined,
+                patterns: roadmapPatterns,
+            },
+            {
                 id: 'contact',
                 label: 'Contact',
                 icon: LifeBuoyIcon,
@@ -893,6 +1223,28 @@ export default function Home() {
                 promptSectionTitle:
                     resolvePromptSectionMeta(contactPromptSectionId)?.title ?? undefined,
                 patterns: contactPatterns,
+            },
+            {
+                id: 'faq',
+                label: 'FAQ',
+                icon: HelpCircleIcon,
+                description: 'Self-service answers and escalation CTAs',
+                patternLabel: 'FAQ pattern',
+                promptSectionId: faqPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(faqPromptSectionId)?.title ?? undefined,
+                patterns: faqPatterns,
+            },
+            {
+                id: 'footer',
+                label: 'Footer',
+                icon: SquareStackIcon,
+                description: 'Comprehensive footer layouts and CTAs',
+                patternLabel: 'Footer pattern',
+                promptSectionId: footerPromptSectionId,
+                promptSectionTitle:
+                    resolvePromptSectionMeta(footerPromptSectionId)?.title ?? undefined,
+                patterns: footerPatterns,
             },
             {
                 id: 'hero',
