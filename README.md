@@ -35,6 +35,18 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
+### Prompt Preview & Docs Sync
+
+프롬프트 미리보기 기능은 `docs/*.md` 문서에서 패턴 설명을 추출하여 캔버스 카드에 연결합니다.  
+새 패턴 문서를 작성하거나 수정했다면 아래 워크플로우를 따라 문서와 앱 상태를 동기화하세요.
+
+1. `docs/section-guide.md`, `docs/viewport-roadmap.md`를 제외한 패턴 문서를 업데이트합니다.
+2. 문서를 저장한 뒤 `npm run sync-prompts`를 실행해 `app/lib/pattern-prompts.json`을 재생성합니다.
+3. `app/routes/home.tsx`의 `sections` 배열에서 새 패턴을 등록하고 `promptId`가 올바르게 매칭되는지 확인합니다.
+4. 개발 서버에서 “프롬프트 미리보기” 버튼이 활성화되었는지 검증합니다.
+
+자세한 상황별 지침은 `docs/prompt-sync-playbook.md`를 참고하세요.
+
 ## Canvas Workspace
 
 The canvas workspace provides an interactive environment for building and previewing layout patterns:

@@ -5,6 +5,10 @@ import { LayoutDashboardIcon, PanelsTopLeftIcon, SparklesIcon } from 'lucide-rea
 import type { Route } from './+types/home';
 import { CanvasWorkspace } from '~/components/canvas/CanvasWorkspace';
 import {
+    PromptPreviewDialog,
+    type PromptPreviewData,
+} from '~/components/canvas/PromptPreviewDialog';
+import {
     HeroAsymmetricGrid,
     HeroBentoGrid,
     HeroMedia,
@@ -30,6 +34,11 @@ import { Button } from '~/components/ui/button';
 import { ScrollArea } from '~/components/ui/scroll-area';
 import { Separator } from '~/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs';
+import {
+    getPatternPrompt,
+    getSectionPromptMetadata,
+    type PatternPrompt,
+} from '~/lib/pattern-prompts';
 import { cn } from '~/lib/utils';
 
 export function meta({}: Route.MetaArgs) {
@@ -42,53 +51,185 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 
+type PatternPromptDetails = PatternPrompt & {
+    sectionId: string;
+    sectionTitle?: string;
+    key: string;
+};
+
+type SectionPattern = {
+    id: string;
+    title: string;
+    component: ComponentType;
+    promptId?: string | null;
+    promptDetails: PatternPromptDetails | null;
+};
+
 type Section = {
     id: string;
     label: string;
     icon: ComponentType<{ className?: string }>;
     description: string;
     patternLabel: string;
-    patterns: { id: string; title: string; component: ComponentType }[];
+    promptSectionId?: string;
+    promptSectionTitle?: string;
+    patterns: SectionPattern[];
 };
 
 export default function Home() {
-    const sections = useMemo<Section[]>(
-        () => [
+    const sections = useMemo<Section[]>(() => {
+        const promptSectionCache = new Map<string, ReturnType<typeof getSectionPromptMetadata>>();
+
+        const resolvePromptSectionMeta = (sectionId?: string) => {
+            if (!sectionId) return null;
+            if (!promptSectionCache.has(sectionId)) {
+                promptSectionCache.set(sectionId, getSectionPromptMetadata(sectionId));
+            }
+            return promptSectionCache.get(sectionId) ?? null;
+        };
+
+        const attachPromptDetails = (
+            pattern: Omit<SectionPattern, 'promptDetails'>,
+            promptSectionId?: string
+        ): SectionPattern => {
+            if (!promptSectionId || pattern.promptId === null) {
+                return { ...pattern, promptDetails: null };
+            }
+
+            const promptKey = pattern.promptId ?? pattern.id;
+            if (!promptKey) {
+                return { ...pattern, promptDetails: null };
+            }
+
+            const promptMeta = getPatternPrompt(promptSectionId, promptKey);
+            const sectionMeta = resolvePromptSectionMeta(promptSectionId);
+
+            if (!promptMeta) {
+                return { ...pattern, promptDetails: null };
+            }
+
+            return {
+                ...pattern,
+                promptDetails: {
+                    ...promptMeta,
+                    key: promptKey,
+                    sectionId: promptSectionId,
+                    sectionTitle: sectionMeta?.title,
+                },
+            };
+        };
+
+        const heroPromptSectionId = 'hero-section-pattern';
+        const navbarPromptSectionId = 'navbar-section';
+
+        const heroPatterns = [
+            { id: 'hero-promo', title: 'Product Promo', component: HeroPromo, promptId: null },
+            { id: 'hero-media', title: 'Media Spotlight', component: HeroMedia, promptId: null },
+            {
+                id: 'hero-split-screen',
+                title: 'Split Screen Spotlight',
+                component: HeroSplitScreen,
+                promptId: 'full-viewport-centered-hero-with-split-screen-layout',
+            },
+            {
+                id: 'hero-minimal-centered',
+                title: 'Minimal Centered',
+                component: HeroMinimalCentered,
+                promptId: 'minimal-centered-hero-with-background-video-image-overlay',
+            },
+            {
+                id: 'hero-asymmetric-grid',
+                title: 'Asymmetric Grid',
+                component: HeroAsymmetricGrid,
+                promptId: 'asymmetric-grid-hero-with-floating-card-components',
+            },
+            {
+                id: 'hero-bento-grid',
+                title: 'Bento Grid Showcase',
+                component: HeroBentoGrid,
+                promptId: 'bento-grid-hero-with-multi-content-modules',
+            },
+            {
+                id: 'hero-scroll-reveal',
+                title: 'Scroll Reveal Depth',
+                component: HeroScrollReveal,
+                promptId: 'scroll-triggered-reveal-hero-with-layered-depth',
+            },
+        ].map(pattern => attachPromptDetails(pattern, heroPromptSectionId));
+
+        const navbarPatterns = [
+            {
+                id: 'navbar-classic',
+                title: 'Logo Left, Actions Right',
+                component: NavbarClassic,
+                promptId: 'horizontal-navigation-bar-with-logo-left-links-right',
+            },
+            {
+                id: 'navbar-centered-logo',
+                title: 'Centered Logo Split Navigation',
+                component: NavbarCenteredLogo,
+                promptId: 'centered-logo-navbar-with-split-navigation',
+            },
+            {
+                id: 'navbar-mega-menu',
+                title: 'Mega Menu Dropdown',
+                component: NavbarMegaMenu,
+                promptId: 'mega-menu-dropdown-navigation',
+            },
+            {
+                id: 'navbar-sidebar-drawer',
+                title: 'Hamburger with Drawer',
+                component: NavbarSidebarDrawer,
+                promptId: 'sidebar-navigation-hamburger-menu',
+            },
+            {
+                id: 'navbar-transparent-scroll',
+                title: 'Transparent to Solid Scroll',
+                component: NavbarTransparentScroll,
+                promptId: 'transparent-navbar-with-scroll-triggered-background',
+            },
+            {
+                id: 'navbar-two-tier',
+                title: 'Two-Tier Utility + Main Nav',
+                component: NavbarTwoTier,
+                promptId: 'two-tier-navigation-top-bar-main-nav',
+            },
+            {
+                id: 'navbar-underline-indicator',
+                title: 'Underline Active Indicator',
+                component: NavbarUnderlineIndicator,
+                promptId: 'inline-navigation-with-underline-indicators',
+            },
+            {
+                id: 'navbar-split-search',
+                title: 'Split Navigation with Search',
+                component: NavbarSplitSearch,
+                promptId: 'split-navigation-with-search-bar',
+            },
+            {
+                id: 'navbar-with-breadcrumb',
+                title: 'Navbar with Breadcrumb Trail',
+                component: NavbarWithBreadcrumb,
+                promptId: 'navbar-with-integrated-breadcrumb',
+            },
+            {
+                id: 'navbar-fab',
+                title: 'Floating Action Button Nav',
+                component: NavbarFab,
+                promptId: 'floating-action-button-fab-navigation',
+            },
+        ].map(pattern => attachPromptDetails(pattern, navbarPromptSectionId));
+
+        return [
             {
                 id: 'hero',
                 label: 'Hero',
                 icon: SparklesIcon,
                 description: 'Primary above-the-fold layouts',
                 patternLabel: 'Hero variant',
-                patterns: [
-                    { id: 'hero-promo', title: 'Product Promo', component: HeroPromo },
-                    { id: 'hero-media', title: 'Media Spotlight', component: HeroMedia },
-                    {
-                        id: 'hero-split-screen',
-                        title: 'Split Screen Spotlight',
-                        component: HeroSplitScreen,
-                    },
-                    {
-                        id: 'hero-minimal-centered',
-                        title: 'Minimal Centered',
-                        component: HeroMinimalCentered,
-                    },
-                    {
-                        id: 'hero-asymmetric-grid',
-                        title: 'Asymmetric Grid',
-                        component: HeroAsymmetricGrid,
-                    },
-                    {
-                        id: 'hero-bento-grid',
-                        title: 'Bento Grid Showcase',
-                        component: HeroBentoGrid,
-                    },
-                    {
-                        id: 'hero-scroll-reveal',
-                        title: 'Scroll Reveal Depth',
-                        component: HeroScrollReveal,
-                    },
-                ],
+                promptSectionId: heroPromptSectionId,
+                promptSectionTitle: resolvePromptSectionMeta(heroPromptSectionId)?.title ?? undefined,
+                patterns: heroPatterns,
             },
             {
                 id: 'navbar',
@@ -96,50 +237,9 @@ export default function Home() {
                 icon: PanelsTopLeftIcon,
                 description: 'Top-of-experience navigation systems',
                 patternLabel: 'Navigation pattern',
-                patterns: [
-                    { id: 'navbar-classic', title: 'Logo Left, Actions Right', component: NavbarClassic },
-                    {
-                        id: 'navbar-centered-logo',
-                        title: 'Centered Logo Split Navigation',
-                        component: NavbarCenteredLogo,
-                    },
-                    { id: 'navbar-mega-menu', title: 'Mega Menu Dropdown', component: NavbarMegaMenu },
-                    {
-                        id: 'navbar-sidebar-drawer',
-                        title: 'Hamburger with Drawer',
-                        component: NavbarSidebarDrawer,
-                    },
-                    {
-                        id: 'navbar-transparent-scroll',
-                        title: 'Transparent to Solid Scroll',
-                        component: NavbarTransparentScroll,
-                    },
-                    {
-                        id: 'navbar-two-tier',
-                        title: 'Two-Tier Utility + Main Nav',
-                        component: NavbarTwoTier,
-                    },
-                    {
-                        id: 'navbar-underline-indicator',
-                        title: 'Underline Active Indicator',
-                        component: NavbarUnderlineIndicator,
-                    },
-                    {
-                        id: 'navbar-split-search',
-                        title: 'Split Navigation with Search',
-                        component: NavbarSplitSearch,
-                    },
-                    {
-                        id: 'navbar-with-breadcrumb',
-                        title: 'Navbar with Breadcrumb Trail',
-                        component: NavbarWithBreadcrumb,
-                    },
-                    {
-                        id: 'navbar-fab',
-                        title: 'Floating Action Button Nav',
-                        component: NavbarFab,
-                    },
-                ],
+                promptSectionId: navbarPromptSectionId,
+                promptSectionTitle: resolvePromptSectionMeta(navbarPromptSectionId)?.title ?? undefined,
+                patterns: navbarPatterns,
             },
             {
                 id: 'placeholder',
@@ -147,13 +247,13 @@ export default function Home() {
                 icon: LayoutDashboardIcon,
                 description: 'Add more sections as you author patterns',
                 patternLabel: 'Pattern preview',
-                patterns: [] as { id: string; title: string; component: ComponentType }[],
+                patterns: [],
             },
-        ],
-        []
-    );
+        ];
+    }, []);
 
     const [activeSection, setActiveSection] = useState(sections[0]);
+    const [promptPreview, setPromptPreview] = useState<PromptPreviewData | null>(null);
     const DESKTOP_PREVIEW_WIDTH = 1440;
     const MOBILE_PREVIEW_WIDTH = 390;
     const PREVIEW_SAFE_GUTTER = 24;
@@ -247,10 +347,39 @@ export default function Home() {
                                             <p className="text-xs text-muted-foreground/70">
                                                 {activeSection.patternLabel}
                                             </p>
+                                            {!pattern.promptDetails ? (
+                                                <p className="text-[11px] text-muted-foreground/60">
+                                                    프롬프트가 아직 연결되지 않았어요
+                                                </p>
+                                            ) : null}
                                         </div>
-                                        <Button size="sm" variant="ghost">
-                                            Inspect
-                                        </Button>
+                                        <div className="flex items-center gap-2">
+                                            <Button
+                                                size="sm"
+                                                variant="outline"
+                                                disabled={!pattern.promptDetails}
+                                                onClick={() => {
+                                                    if (!pattern.promptDetails) return;
+                                                    setPromptPreview({
+                                                        sectionId: pattern.promptDetails.sectionId,
+                                                        sectionTitle:
+                                                            pattern.promptDetails.sectionTitle ??
+                                                            activeSection.label,
+                                                        patternId: pattern.promptDetails.key,
+                                                        patternTitle: pattern.title,
+                                                        documentTitle: pattern.promptDetails.title,
+                                                        prompt: pattern.promptDetails.prompt,
+                                                        sourcePath: pattern.promptDetails.sourcePath,
+                                                        order: pattern.promptDetails.order,
+                                                    });
+                                                }}
+                                            >
+                                                프롬프트 미리보기
+                                            </Button>
+                                            <Button size="sm" variant="ghost">
+                                                Inspect
+                                            </Button>
+                                        </div>
                                     </header>
                                     <div
                                         className="grid gap-6"
@@ -302,6 +431,11 @@ export default function Home() {
                         </div>
                     )}
                 </CanvasWorkspace>
+                <PromptPreviewDialog
+                    open={Boolean(promptPreview)}
+                    data={promptPreview}
+                    onClose={() => setPromptPreview(null)}
+                />
             </main>
         </div>
     );
