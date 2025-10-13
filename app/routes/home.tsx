@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { ComponentType } from 'react';
-import { LayoutDashboardIcon, SparklesIcon } from 'lucide-react';
+import { LayoutDashboardIcon, PanelsTopLeftIcon, SparklesIcon } from 'lucide-react';
 
 import type { Route } from './+types/home';
 import { CanvasWorkspace } from '~/components/canvas/CanvasWorkspace';
@@ -13,6 +13,18 @@ import {
     HeroScrollReveal,
     HeroSplitScreen,
 } from '~/components/sections/hero';
+import {
+    NavbarCenteredLogo,
+    NavbarClassic,
+    NavbarFab,
+    NavbarMegaMenu,
+    NavbarSidebarDrawer,
+    NavbarSplitSearch,
+    NavbarTransparentScroll,
+    NavbarTwoTier,
+    NavbarUnderlineIndicator,
+    NavbarWithBreadcrumb,
+} from '~/components/sections/navbar';
 import { Badge } from '~/components/ui/badge';
 import { Button } from '~/components/ui/button';
 import { ScrollArea } from '~/components/ui/scroll-area';
@@ -30,14 +42,24 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 
+type Section = {
+    id: string;
+    label: string;
+    icon: ComponentType<{ className?: string }>;
+    description: string;
+    patternLabel: string;
+    patterns: { id: string; title: string; component: ComponentType }[];
+};
+
 export default function Home() {
-    const sections = useMemo(
+    const sections = useMemo<Section[]>(
         () => [
             {
                 id: 'hero',
                 label: 'Hero',
                 icon: SparklesIcon,
                 description: 'Primary above-the-fold layouts',
+                patternLabel: 'Hero variant',
                 patterns: [
                     { id: 'hero-promo', title: 'Product Promo', component: HeroPromo },
                     { id: 'hero-media', title: 'Media Spotlight', component: HeroMedia },
@@ -69,10 +91,62 @@ export default function Home() {
                 ],
             },
             {
+                id: 'navbar',
+                label: 'Navigation',
+                icon: PanelsTopLeftIcon,
+                description: 'Top-of-experience navigation systems',
+                patternLabel: 'Navigation pattern',
+                patterns: [
+                    { id: 'navbar-classic', title: 'Logo Left, Actions Right', component: NavbarClassic },
+                    {
+                        id: 'navbar-centered-logo',
+                        title: 'Centered Logo Split Navigation',
+                        component: NavbarCenteredLogo,
+                    },
+                    { id: 'navbar-mega-menu', title: 'Mega Menu Dropdown', component: NavbarMegaMenu },
+                    {
+                        id: 'navbar-sidebar-drawer',
+                        title: 'Hamburger with Drawer',
+                        component: NavbarSidebarDrawer,
+                    },
+                    {
+                        id: 'navbar-transparent-scroll',
+                        title: 'Transparent to Solid Scroll',
+                        component: NavbarTransparentScroll,
+                    },
+                    {
+                        id: 'navbar-two-tier',
+                        title: 'Two-Tier Utility + Main Nav',
+                        component: NavbarTwoTier,
+                    },
+                    {
+                        id: 'navbar-underline-indicator',
+                        title: 'Underline Active Indicator',
+                        component: NavbarUnderlineIndicator,
+                    },
+                    {
+                        id: 'navbar-split-search',
+                        title: 'Split Navigation with Search',
+                        component: NavbarSplitSearch,
+                    },
+                    {
+                        id: 'navbar-with-breadcrumb',
+                        title: 'Navbar with Breadcrumb Trail',
+                        component: NavbarWithBreadcrumb,
+                    },
+                    {
+                        id: 'navbar-fab',
+                        title: 'Floating Action Button Nav',
+                        component: NavbarFab,
+                    },
+                ],
+            },
+            {
                 id: 'placeholder',
                 label: 'Coming soon',
                 icon: LayoutDashboardIcon,
                 description: 'Add more sections as you author patterns',
+                patternLabel: 'Pattern preview',
                 patterns: [] as { id: string; title: string; component: ComponentType }[],
             },
         ],
@@ -171,7 +245,7 @@ export default function Home() {
                                                 {pattern.title}
                                             </h3>
                                             <p className="text-xs text-muted-foreground/70">
-                                                Hero variant
+                                                {activeSection.patternLabel}
                                             </p>
                                         </div>
                                         <Button size="sm" variant="ghost">

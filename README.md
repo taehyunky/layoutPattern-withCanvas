@@ -1,15 +1,16 @@
-# Welcome to React Router!
+# Canvas Layout Pattern Builder
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, interactive canvas-based layout pattern builder for creating and previewing UI components and sections.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/taehyunky/layoutPattern-withCanvas)
 
 ## Features
 
-- 🚀 Server-side rendering
+- 🎨 Interactive Canvas Workspace with zoom/pan functionality
+- 🧩 Pre-built Hero Section Components (Asymmetric, Bento, Media, etc.)
+- 🎯 shadcn/ui Components Integration
 - ⚡️ Hot Module Replacement (HMR)
 - 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
 - 🔒 TypeScript by default
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
@@ -33,6 +34,36 @@ npm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
+
+## Canvas Workspace
+
+The canvas workspace provides an interactive environment for building and previewing layout patterns:
+
+- **Zoom Controls**: Use the zoom in/out buttons or mouse wheel to adjust the view
+- **Pan Navigation**: Click and drag to move around the canvas
+- **Reset & Center**: Reset zoom level or center the view
+- **Component Library**: Drag and drop pre-built components onto the canvas
+
+## Available Components
+
+### Hero Sections
+
+- Asymmetric Grid Layout
+- Bento Grid Layout
+- Media Hero
+- Minimal Centered
+- Promo Hero
+- Scroll Reveal
+- Split Screen
+
+### UI Components
+
+- Button
+- Card
+- Badge
+- Separator
+- Tabs
+- Scroll Area
 
 ## Building for Production
 
@@ -78,10 +109,36 @@ Make sure to deploy the output of `npm run build`
 │   └── server/    # Server-side code
 ```
 
-## Styling
+## Tech Stack
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- **React Router**: Modern routing for React applications
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first CSS framework
+- **shadcn/ui**: High-quality component library
+- **React Zoom Pan Pinch**: Canvas interaction library
+
+## Project Structure
+
+```
+├── app/
+│   ├── components/
+│   │   ├── canvas/          # Canvas workspace components
+│   │   ├── sections/        # Pre-built section components
+│   │   └── ui/             # shadcn/ui components
+│   ├── routes/             # Application routes
+│   └── lib/                # Utility functions
+│   └── lib/                # Utility functions
+└── components.json         # shadcn/ui configuration
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router and shadcn/ui.
